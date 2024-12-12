@@ -1,0 +1,241 @@
+.feedback-area {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    .svg-feedback-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        width: 100%;
+        height: auto;
+        z-index: -1;
+    }
+}
+.single-feedback {
+    position: relative;
+    padding: 30px;
+    background: var(--whiteColor);
+    transition: .4s;
+    text-align: center;
+    border-radius: 3px;
+    z-index: 1;
+    margin: {
+        bottom: 30px;
+        top: 50px;
+    }
+    .client-info {
+        img {
+            clip-path: polygon(50% 0%, 38.11% 6.7%, 24.99% 6.72%, 18.06% 18.44%, 6.7% 25%, 6.56% 38.64%, 0% 50%, 6.7% 61.89%, 6.7% 75%, 18.44% 81.94%, 25% 93.3%, 38.64% 93.44%, 50% 100%, 61.88% 93.3%, 75% 93.3%, 81.94% 81.56%, 93.3% 74.9%, 93.44% 61.36%, 100% 50%, 93.3% 38.11%, 93.3% 25%, 81.56% 18.06%, 74.96% 6.7%, 61.36% 6.56%, 50% 0%);
+            position: absolute;
+            top: -50px;
+            left: 0;
+            right: 0;
+            box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+            margin: 0 auto;
+            width: 115px;
+            height: 115px;
+        }
+        h3 {
+            font: {
+                size: 23px;
+                weight: 700;
+            }
+            margin: {
+                bottom: 5px;
+                top: 55px;
+            }
+        }
+        span {
+            color: var(--secondaryColor);
+            font-size: 15px;
+        }
+    }
+    p {
+        margin-top: 25px;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 4px;
+        background: var(--primaryColor);
+        border-radius: 0 0 3px 3px;
+        transition: .4s;
+    }
+    &:hover {
+        box-shadow: 0 0 20px 5px rgba(137, 173, 255, 0.35);
+        background-color: var(--whiteColor);
+    }
+}
+.single-feedback-box {
+    background: var(--whiteColor);
+    box-shadow: 0 10px 50px 0 rgba(46, 65, 90, 0.1);
+    border-radius: 5px;
+    position: relative;
+    padding: 30px 30px 30px 45px;
+    margin: {
+        bottom: 30px;
+        left: 30px;
+    }
+    .client-info {
+        img {
+            position: absolute;
+            left: -30px;
+            width: 60px !important;
+            height: 60px;
+            top: 30px;
+            border-radius: 50%;
+            border: 3px solid var(--whiteColor);
+        }
+        h3 {
+            font: {
+                size: 23px;
+                weight: 700;
+            }
+            margin: {
+                bottom: 5px;
+            }
+        }
+        span {
+            color: var(--secondaryColor);
+            font-size: 15px;
+        }
+    }
+    p {
+        margin-top: 20px;
+    }
+}
+::ng-deep {
+    .feedback-slides {
+        .owl-item {
+            .single-feedback {
+                opacity: .5;
+                transition: .5s;
+    
+                &::before {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+            &.active {
+                &.center {
+                    .single-feedback {
+                        opacity: 1;
+                        transition: .5s;
+                        box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+    
+                        &::before {
+                            opacity: 1;
+                            visibility: visible;
+                            width: 100%;
+                        }
+                    }
+                    .single-feedback-box {
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+        .owl-theme {
+            .owl-nav {
+                line-height: .01;
+                margin-top: 20px;
+                margin-bottom: -8px;
+    
+                [class*=owl-] {
+                    color: var(--secondaryColor);
+                    font-size: 30px;
+                    margin: 0 3px;
+                    padding: 0;
+                    background: transparent;
+                    display: inline-block;
+                    cursor: pointer;
+                    border-radius: 0;
+                    transition: .4s;
+    
+                    &:hover {
+                        color: var(--primaryColor);
+                    }
+                }
+            }
+            .owl-controls {
+                line-height: .1;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .single-feedback {
+        .client-info {
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+    ::ng-deep {
+        .feedback-slides {
+            .owl-item {
+                &.active {
+                    &.center {
+                        .single-feedback-box {
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+            .owl-theme {
+                .owl-controls {
+                    line-height: .01;
+    
+                    .owl-nav {
+                        margin: {
+                            top: 0;
+                            bottom: -8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .single-feedback-box {
+        .client-info {
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .single-feedback {
+        .client-info {
+            h3 {
+                font-size: 21px;
+            }
+        }
+    }
+    .single-feedback-box {
+        .client-info {
+            h3 {
+                font-size: 21px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1350px) {}
+
+@media only screen and (min-width: 1910px) {}
+
+@media only screen and (max-width: 767px) {}

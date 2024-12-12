@@ -1,0 +1,106 @@
+.contact-info-box {
+    text-align: center;
+    transition: .4s;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+    background: var(--whiteColor);
+    padding: 30px;
+
+    .icon {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        background: #edf5ff;
+        border-radius: 50%;
+        font-size: 30px;
+        color: var(--primaryColor);
+        transition: .4s;
+    }
+    h3 {
+        margin: 25px 0 15px;
+        font: {
+            size: 23px;
+            weight: 700;
+        }
+    }
+    p {
+        margin-bottom: 0;
+
+        a {
+            color: var(--paragraphColor);
+
+            &:hover {
+                color: var(--primaryColor);
+            }
+        }
+    }
+    &:hover {
+        transform: translateY(-10px);
+
+        .icon {
+            color: var(--whiteColor);
+            background: var(--secondaryColor);
+        }
+    }
+}
+#map {
+    height: 500px;
+    width: 100%;
+}
+#contactForm {
+    .btn {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .contact-info-area {
+        padding-bottom: 40px;
+    }
+    .contact-info-box {
+        padding: 20px;
+        margin-bottom: 30px;
+
+        .icon {
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            font-size: 25px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+    }
+    #contactForm {
+        margin-top: 40px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .contact-info-area {
+        padding-bottom: 50px;
+    }
+    .contact-info-box {
+        margin-bottom: 30px;
+    }
+    #contactForm {
+        margin-top: 45px;
+    }
+    .contact-info-box {
+        h3 {
+            font-size: 21px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1350px) {}
+
+@media only screen and (min-width: 1910px) {}
+
+@media only screen and (max-width: 767px) {}

@@ -1,0 +1,250 @@
+.team-area {
+    padding-bottom: 70px;
+}
+::ng-deep {
+    .team-slides {
+        .owl-theme {
+            .owl-nav {
+                line-height: .01;
+                margin: {
+                    top: 10px;
+                    bottom: 22px;
+                };
+                [class*=owl-] {
+                    color: var(--secondaryColor);
+                    font-size: 30px;
+                    margin: 0 3px;
+                    padding: 0;
+                    background: transparent;
+                    display: inline-block;
+                    cursor: pointer;
+                    border-radius: 0;
+                    transition: .4s;
+    
+                    &:hover {
+                        color: var(--primaryColor);
+                    }
+                }
+            }
+            .owl-controls {
+                line-height: .1;
+            }
+        }
+    }
+}
+.single-team-member {
+    box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+    margin-bottom: 30px;
+    background: var(--whiteColor);
+    text-align: center;
+    border-radius: 5px;
+
+    img {
+        border-radius: 5px 5px 0 0;
+    }
+    .team-content {
+        padding: 30px;
+
+        h3 {
+            font: {
+                size: 23px;
+                weight: 700;
+            }
+            margin-bottom: 8px;
+        }
+        span {
+            display: block;
+            color: var(--paragraphColor);
+            font-size: 15px;
+        }
+        ul {
+            padding: 0;
+            margin: 15px 0 0;
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+
+                a {
+                    width: 32px;
+                    height: 32px;
+                    text-align: center;
+                    line-height: 32px;
+                    border: 1px solid var(--paragraphColor);
+                    border-radius: 50%;
+                    font-size: 14px;
+                    margin: 0 3px;
+                    color: var(--paragraphColor);
+
+                    &:hover {
+                        color: var(--whiteColor);
+                        background: var(--primaryColor);
+                        border-color: var(--primaryColor);
+                    }
+                    &.facebook {
+                        border-color: #5580FF;
+                        color: #5580FF;
+
+                        &:hover {
+                            background-color: #5580FF;
+                            color: var(--whiteColor);
+                        }
+                    }
+                    &.instagram {
+                        border-color: var(--blackColor);
+                        color: var(--blackColor);
+
+                        &:hover {
+                            background-color: var(--blackColor);
+                            color: var(--whiteColor);
+                        }
+                    }
+                    &.twitter {
+                        border-color: #FF8A73;
+                        color: #FF8A73;
+
+                        &:hover {
+                            background-color: #FF8A73;
+                            color: var(--whiteColor);
+                        }
+                    }
+                    &.linkedin {
+                        border-color: #FFD474;
+                        color: #FFD474;
+
+                        &:hover {
+                            background-color: #FFD474;
+                            color: var(--whiteColor);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.single-team-member-box {
+    box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+    margin-bottom: 30px;
+    background: var(--whiteColor);
+    text-align: center;
+    border-radius: 5px;
+    padding: 30px;
+
+    img {
+        clip-path: polygon(50% 0%, 38.11% 6.7%, 24.99% 6.72%, 18.06% 18.44%, 6.7% 25%, 6.56% 38.64%, 0% 50%, 6.7% 61.89%, 6.7% 75%, 18.44% 81.94%, 25% 93.3%, 38.64% 93.44%, 50% 100%, 61.88% 93.3%, 75% 93.3%, 81.94% 81.56%, 93.3% 74.9%, 93.44% 61.36%, 100% 50%, 93.3% 38.11%, 93.3% 25%, 81.56% 18.06%, 74.96% 6.7%, 61.36% 6.56%, 50% 0%);
+    }
+    .team-content {
+        margin-top: 30px;
+
+        h3 {
+            margin-bottom: 8px;
+            font: {
+                size: 23px;
+                weight: 700;
+            }
+        }
+        span {
+            display: block;
+            color: var(--paragraphColor);
+            font-size: 15px;
+        }
+        ul {
+            padding: 0;
+            margin: 15px 0 0;
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+
+                a {
+                    font-size: 18px;
+                    color: var(--paragraphColor);
+                    margin: 0 4px;
+
+                    &:hover {
+                        transform: translateY(-5px);
+                    }
+                    &.facebook {
+                        color: #5580FF;
+                    }
+                    &.twitter {
+                        color: #FF8A73;
+                    }
+                    &.linkedin {
+                        color: #FFD474;
+                    }
+                    &.instagram {
+                        color: var(--blackColor);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .team-area {
+        padding-bottom: 20px;
+    }
+    .single-team-member {
+        .team-content {
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+    .single-team-member-box {
+        .team-content {
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+    ::ng-deep {
+        .team-slides {
+            &.owl-theme {
+                .owl-controls {
+                    .owl-nav {
+                        line-height: .01;
+                        margin: {
+                            top: 0;
+                            bottom: 22px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .team-area {
+        padding-bottom: 50px;
+    }
+    .single-team-member {
+        .team-content {
+            h3 {
+                font-size: 21px;
+            }
+        }
+    }
+    .single-team-member-box {
+        .team-content {
+            h3 {
+                font-size: 21px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1350px) {}
+
+@media only screen and (min-width: 1910px) {}
+
+@media only screen and (max-width: 767px) {}

@@ -1,0 +1,546 @@
+<!-- Default -->
+<div
+    class="overview-section ptb-100 bg-gray"
+    [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-5' || router.url === '/index-6' || router.url === '/index-7' || router.url === '/index-8'}"
+>
+    <div class="container">
+        <div class="section-title">
+            <h2>More to Discover</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="overview-box">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-6 overview-img">
+                    <img src="img/overview-1.png" alt="image">
+                </div>
+                <div class="col-lg-6 col-md-6 overview-content">
+                    <div class="icon">
+                        <i class="icofont-power"></i>
+                    </div>
+                    <h3>Getting started page</h3>
+                    <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project to an individual person's workload.</p>
+                    <ul>
+                        <li>Unimited Video Call</li>
+                        <li>Add Favourite contact</li>
+                        <li>Camera Filter</li>
+                    </ul>
+                    <a routerLink="/about-us" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="overview-box">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-6 overview-content">
+                    <div class="icon">
+                        <i class="icofont-anchor"></i>
+                    </div>
+                    <h3>Outdated comments toggling</h3>
+                    <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project to an individual person's workload.</p>
+                    <ul>
+                        <li>Unimited Video Call</li>
+                        <li>Add Favourite contact</li>
+                        <li>Camera Filter</li>
+                    </ul>
+                    <a routerLink="/about-us" class="btn btn-primary">Read More</a>
+                </div>
+                <div class="col-lg-6 col-md-6 app-fetured-item">
+                    <div class="app-item item-one">
+                        <i class="icofont-wink-smile"></i>
+                        <h6>Community</h6>
+                    </div>
+                    <div class="app-item item-two">
+                        <i class="icofont-ebook"></i>
+                        <h6>Honest pricing</h6>
+                    </div>
+                    <div class="app-item item-three">
+                        <i class="icofont-wink-smile"></i>
+                        <h6>Management</h6>
+                    </div>
+                    <div class="app-item item-four">
+                        <i class="icofont-stock-mobile"></i>
+                        <h6>Mobile Design</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overview-box">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-6 overview-img">
+                    <img src="img/overview-3.png" alt="image">
+                </div>
+                <div class="col-lg-6 col-md-6 overview-content">
+                    <div class="icon">
+                        <i class="icofont-users-social"></i>
+                    </div>
+                    <h3>Code review illustrations</h3>
+                    <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project to an individual person's workload.</p>
+                    <ul>
+                        <li>Unimited Video Call</li>
+                        <li>Add Favourite contact</li>
+                        <li>Camera Filter</li>
+                    </ul>
+                    <a routerLink="/about-us" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="overview-box">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-6 overview-content">
+                    <div class="icon">
+                        <i class="icofont-ui-messaging"></i>
+                    </div>
+                    <h3>We provide proffesional staff</h3>
+                    <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project to an individual person's workload.</p>
+                    <ul>
+                        <li>Unimited Video Call</li>
+                        <li>Add Favourite contact</li>
+                        <li>Camera Filter</li>
+                    </ul>
+                    <a routerLink="/about-us" class="btn btn-primary">Read More</a>
+                </div>
+                <div class="col-lg-6 col-md-6 overview-img">
+                    <img src="img/overview-4.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shape7"><img src="img/shape7.png" alt="shape"></div>
+    <div class="shape3"><img src="img/shape3.png" alt="img"></div>
+    <div class="bg-gray shape-1"></div>
+    <div class="shape6"><img src="img/shape6.png" alt="img"></div>
+    <div class="shape8 rotateme"><img src="img/shape8.svg" alt="shape"></div>
+    <div class="shape9"><img src="img/shape9.svg" alt="shape"></div>
+    <div class="shape10"><img src="img/shape10.svg" alt="shape"></div>
+    <div class="shape11 rotateme"><img src="img/shape11.svg" alt="shape"></div>
+</div>
+
+<!-- Only for App Landing Demo -->
+<div
+    class="overview-section ptb-100"
+    *ngIf="router.url === '/index-2'"
+>
+    <div class="container">
+        <div class="section-title">
+            <h2>More to Discover</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="overview-box">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-6 overview-img">
+                    <img src="img/overview-app1.png" alt="image">
+                </div>
+                <div class="col-lg-6 col-md-6 overview-content">
+                    <div class="icon">
+                        <i class="icofont-power"></i>
+                    </div>
+                    <h3>Fast and Smooth</h3>
+                    <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project to an individual person's workload.</p>
+                    <ul>
+                        <li>Unimited Video Call</li>
+                        <li>Add Favourite contact</li>
+                        <li>Camera Filter</li>
+                    </ul>
+                    <a routerLink="/about-us" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="overview-box">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-6 overview-content">
+                    <div class="icon">
+                        <i class="icofont-share-alt"></i>
+                    </div>
+                    <h3>Share your passion to the world</h3>
+                    <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project to an individual person's workload.</p>
+                    <ul>
+                        <li>Unimited Video Call</li>
+                        <li>Add Favourite contact</li>
+                        <li>Camera Filter</li>
+                    </ul>
+                    <a routerLink="/about-us" class="btn btn-primary">Read More</a>
+                </div>
+                <div class="col-lg-6 col-md-6 app-fetured-item">
+                    <div class="app-item item-one">
+                        <i class="icofont-wink-smile"></i>
+                        <h6>Community</h6>
+                    </div>
+                    <div class="app-item item-two">
+                        <i class="icofont-ebook"></i>
+                        <h6>Honest pricing</h6>
+                    </div>
+                    <div class="app-item item-three">
+                        <i class="icofont-wink-smile"></i>
+                        <h6>Management</h6>
+                    </div>
+                    <div class="app-item item-four">
+                        <i class="icofont-stock-mobile"></i>
+                        <h6>Mobile Design</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overview-box">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-6 overview-img">
+                    <img src="img/overview-app3.png" alt="image">
+                </div>
+                <div class="col-lg-6 col-md-6 overview-content">
+                    <div class="icon">
+                        <i class="icofont-ui-messaging"></i>
+                    </div>
+                    <h3>Constant Updates</h3>
+                    <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project to an individual person's workload.</p>
+                    <ul>
+                        <li>Unimited Video Call</li>
+                        <li>Add Favourite contact</li>
+                        <li>Camera Filter</li>
+                    </ul>
+                    <a routerLink="/about-us" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="overview-box">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-6 overview-content">
+                    <div class="icon">
+                        <i class="icofont-users-social"></i>
+                    </div>
+                    <h3>We provide proffesional staff</h3>
+                    <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project to an individual person's workload.</p>
+                    <ul>
+                        <li>Unimited Video Call</li>
+                        <li>Add Favourite contact</li>
+                        <li>Camera Filter</li>
+                    </ul>
+                    <a routerLink="/about-us" class="btn btn-primary">Read More</a>
+                </div>
+                <div class="col-lg-6 col-md-6 overview-img">
+                    <img src="img/overview-app2.png" alt="image">
+                </div>
+            </div>
+        </div>
+        <div class="overview-box modern-flexible">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-item right-icon">
+                        <div class="icon">
+                            <i class="icofont-lamp-light"></i>
+                        </div>
+                        <h3>Stunning Showcases</h3>
+                        <p>Nam fermentum, arcu nec porta aliquam, lacus lorem efficitur lectus, quis sagittis tellus erat quis.</p>
+                    </div>
+                    <div class="single-item right-icon">
+                        <div class="icon">
+                            <i class="icofont-responsive"></i>
+                        </div>
+                        <h3>Fully Customizable</h3>
+                        <p>Nam fermentum, arcu nec porta aliquam, lacus lorem efficitur lectus, quis sagittis tellus erat quis.</p>
+                    </div>
+                    <div class="single-item right-icon">
+                        <div class="icon">
+                            <i class="icofont-ui-timer"></i>
+                        </div>
+                        <h3>Engaging Tours</h3>
+                        <p>Nam fermentum, arcu nec porta aliquam, lacus lorem efficitur lectus, quis sagittis tellus erat quis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 overview-img">
+                    <img src="img/feature-img-with-app.png" alt="image">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-item">
+                        <div class="icon">
+                            <i class="icofont-ui-timer"></i>
+                        </div>
+                        <h3>Engaging Tours</h3>
+                        <p>Nam fermentum, arcu nec porta aliquam, lacus lorem efficitur lectus, quis sagittis tellus erat quis.</p>
+                    </div>
+                    <div class="single-item">
+                        <div class="icon">
+                            <i class="icofont-star-alt-2"></i>
+                        </div>
+                        <h3>Exquisite Design</h3>
+                        <p>Nam fermentum, arcu nec porta aliquam, lacus lorem efficitur lectus, quis sagittis tellus erat quis.</p>
+                    </div>
+                    <div class="single-item">
+                        <div class="icon">
+                            <i class="icofont-ui-timer"></i>
+                        </div>
+                        <h3>Engaging Tours</h3>
+                        <p>Nam fermentum, arcu nec porta aliquam, lacus lorem efficitur lectus, quis sagittis tellus erat quis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shape7"><img src="img/shape7.png" alt="shape"></div>
+    <div class="shape3"><img src="img/shape3.png" alt="img"></div>
+    <div class="bg-gray shape-1"></div>
+    <div class="shape6"><img src="img/shape6.png" alt="img"></div>
+    <div class="shape8 rotateme"><img src="img/shape8.svg" alt="shape"></div>
+    <div class="shape9"><img src="img/shape9.svg" alt="shape"></div>
+    <div class="shape10"><img src="img/shape10.svg" alt="shape"></div>
+    <div class="shape11 rotateme"><img src="img/shape11.svg" alt="shape"></div>
+</div>
+
+<!-- Only for Software Landing Demo -->
+<div
+    class="fun-facts-area ptb-100 bg-gray"
+    *ngIf="router.url === '/index-5'"
+>
+    <div class="fun-facts-inner-area mt-0">
+        <div class="container-fluid">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="fun-facts-image">
+                        <img src="img/features-img1.png" alt="image">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="fun-facts-inner-content">
+                        <h3>Build Beautiful Interface Into Your Application</h3>
+                        <p>Funding freemium technology focus equity bootstrapping usernce niche market. Seed round agile development growth hacking retur investment alpha. Investor advisor marketing pitch gen scrum project.</p>
+                        <p>Responsive web design. Agile development innovator termsheet is users interface pitch scrum project research & development.</p>
+                        <ul>
+                            <li>Unimited Video Call</li>
+                            <li>Add Favourite contact</li>
+                            <li>Camera Filter</li>
+                        </ul>
+                        <a routerLink="/about-us" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Only for Book Landing Demo -->
+<div
+    class="book-discover ptb-100"
+    *ngIf="router.url === '/index-6'"
+>
+    <div class="container">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="discover-content">
+                    <h3>Discoverd Topics</h3>
+                    <span>Take a look at topics are discovered in this book</span>
+                    <p>Gain is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances.</p>
+                    <ul>
+                        <li><i class="icofont-check"></i> Design principles</li>
+                        <li><i class="icofont-check"></i> Visual hierarchy</li>
+                        <li><i class="icofont-check"></i> White space</li>
+                        <li><i class="icofont-check"></i> Image selection</li>
+                        <li><i class="icofont-check"></i> Responsive Design</li>
+                        <li><i class="icofont-check"></i> Typography</li>
+                        <li><i class="icofont-check"></i> Color theory</li>
+                        <li><i class="icofont-check"></i> UI design</li>
+                        <li><i class="icofont-check"></i> UX design</li>
+                        <li><i class="icofont-check"></i> Real life projects</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="discover-img">
+                    <img src="img/book-img2.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Only for Startup Agency Demo -->
+<div
+    class="overview-section ptb-100"
+    *ngIf="router.url === '/index-7'"
+>
+    <div class="container">
+        <div class="overview-box">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-6 overview-img">
+                    <img src="img/marketing-3.png" alt="image">
+                </div>
+                <div class="col-lg-6 col-md-6 overview-content">
+                    <div class="icon">
+                        <i class="icofont-power"></i>
+                    </div>
+                    <h3>Get Started With Our Software</h3>
+                    <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project to an individual person's workload.</p>
+                    <ul>
+                        <li>Unimited Video Call</li>
+                        <li>Add Favourite contact</li>
+                        <li>Camera Filter</li>
+                    </ul>
+                    <a routerLink="/features" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="overview-box">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-6 overview-content">
+                    <div class="icon">
+                        <i class="icofont-share-alt"></i>
+                    </div>
+                    <h3>Solve Your Problem With Very Faster</h3>
+                    <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project to an individual person's workload.</p>
+                    <ul>
+                        <li>Unimited Video Call</li>
+                        <li>Add Favourite contact</li>
+                        <li>Camera Filter</li>
+                    </ul>
+                    <a routerLink="/features" class="btn btn-primary">Read More</a>
+                </div>
+                <div class="col-lg-6 col-md-6 overview-img">
+                    <img src="img/marketing-2.png" alt="image">
+                </div>
+            </div>
+        </div>
+        <div class="overview-box">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-6 overview-img">
+                    <img src="img/marketing-1.png" alt="image">
+                </div>
+                <div class="col-lg-6 col-md-6 overview-content">
+                    <div class="icon">
+                        <i class="icofont-ui-messaging"></i>
+                    </div>
+                    <h3>Engineered And Optimization By Conveying. </h3>
+                    <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project to an individual person's workload.</p>
+                    <ul>
+                        <li>Unimited Video Call</li>
+                        <li>Add Favourite contact</li>
+                        <li>Camera Filter</li>
+                    </ul>
+                    <a routerLink="/features" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="overview-box">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-6 overview-content">
+                    <div class="icon">
+                        <i class="icofont-users-social"></i>
+                    </div>
+                    <h3>Quick & Easy Process</h3>
+                    <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project to an individual person's workload.</p>
+                    <ul>
+                        <li>Unimited Video Call</li>
+                        <li>Add Favourite contact</li>
+                        <li>Camera Filter</li>
+                    </ul>
+                    <a routerLink="/features" class="btn btn-primary">Read More</a>
+                </div>
+                <div class="col-lg-6 col-md-6 overview-img">
+                    <img src="img/overview-4.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shape7"><img src="img/shape7.png" alt="shape"></div>
+    <div class="shape3"><img src="img/shape3.png" alt="img"></div>
+    <div class="bg-gray shape-1"></div>
+    <div class="shape6"><img src="img/shape6.png" alt="img"></div>
+    <div class="shape8 rotateme"><img src="img/shape8.svg" alt="shape"></div>
+    <div class="shape9"><img src="img/shape9.svg" alt="shape"></div>
+    <div class="shape10"><img src="img/shape10.svg" alt="shape"></div>
+    <div class="shape11 rotateme"><img src="img/shape11.svg" alt="shape"></div>
+</div>
+
+<!-- Only for Payment Processing Demo -->
+<div
+    class="overview-section ptb-100"
+    *ngIf="router.url === '/index-8'"
+>
+    <div class="container">
+        <div class="overview-box">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-6 overview-img">
+                    <img src="img/overview-1.png" alt="image">
+                </div>
+                <div class="col-lg-6 col-md-6 overview-content">
+                    <div class="icon">
+                        <i class="icofont-power"></i>
+                    </div>
+                    <h3>Register Free</h3>
+                    <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project to an individual person's workload.</p>
+                    <ul>
+                        <li>Unimited Video Call</li>
+                        <li>Add Favourite contact</li>
+                        <li>Camera Filter</li>
+                    </ul>
+                    <a routerLink="/features" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="overview-box">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-6 overview-content">
+                    <div class="icon">
+                        <i class="icofont-share-alt"></i>
+                    </div>
+                    <h3>Configure Your Sourcing</h3>
+                    <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project to an individual person's workload.</p>
+                    <ul>
+                        <li>Unimited Video Call</li>
+                        <li>Add Favourite contact</li>
+                        <li>Camera Filter</li>
+                    </ul>
+                    <a routerLink="/features" class="btn btn-primary">Read More</a>
+                </div>
+                <div class="col-lg-6 col-md-6 overview-img">
+                    <img src="img/overview-2.png" alt="image">
+                </div>
+            </div>
+        </div>
+        <div class="overview-box">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-6 overview-img">
+                    <img src="img/overview-3.png" alt="image">
+                </div>
+                <div class="col-lg-6 col-md-6 overview-content">
+                    <div class="icon">
+                        <i class="icofont-ui-messaging"></i>
+                    </div>
+                    <h3>Start Receiving Payments</h3>
+                    <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project to an individual person's workload.</p>
+                    <ul>
+                        <li>Unimited Video Call</li>
+                        <li>Add Favourite contact</li>
+                        <li>Camera Filter</li>
+                    </ul>
+                    <a routerLink="/features" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="overview-box">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-6 overview-content">
+                    <div class="icon">
+                        <i class="icofont-users-social"></i>
+                    </div>
+                    <h3>Quick & Easy Process</h3>
+                    <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project to an individual person's workload.</p>
+                    <ul>
+                        <li>Unimited Video Call</li>
+                        <li>Add Favourite contact</li>
+                        <li>Camera Filter</li>
+                    </ul>
+                    <a routerLink="/features" class="btn btn-primary">Read More</a>
+                </div>
+                <div class="col-lg-6 col-md-6 overview-img">
+                    <img src="img/overview-4.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shape7"><img src="img/shape7.png" alt="shape"></div>
+    <div class="shape3"><img src="img/shape3.png" alt="img"></div>
+    <div class="bg-gray shape-1"></div>
+    <div class="shape6"><img src="img/shape6.png" alt="img"></div>
+    <div class="shape8 rotateme"><img src="img/shape8.svg" alt="shape"></div>
+    <div class="shape9"><img src="img/shape9.svg" alt="shape"></div>
+    <div class="shape10"><img src="img/shape10.svg" alt="shape"></div>
+    <div class="shape11 rotateme"><img src="img/shape11.svg" alt="shape"></div>
+</div>

@@ -1,0 +1,371 @@
+<!-- Default -->
+<div
+    class="team-area ptb-100 bg-gray"
+    [ngClass]="{'d-none': router.url === '/index-3' || router.url === '/index-6' || router.url === '/index-7'}"
+>
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Smart Team</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="team-slides">
+            <owl-carousel-o [options]="teamSlides">
+                <ng-template carouselSlide>
+                    <div class="single-team-member">
+                        <img src="img/team-img1.jpg" alt="team">
+                        <div class="team-content">
+                            <h3>John Doe</h3>
+                            <span>CEO</span>
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="icofont-instagram"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="icofont-twitter"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team-member">
+                        <img src="img/team-img2.jpg" alt="team">
+                        <div class="team-content">
+                            <h3>Steven Smith</h3>
+                            <span>Developer</span>
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="icofont-instagram"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="icofont-twitter"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team-member">
+                        <img src="img/team-img3.jpg" alt="team">
+                        <div class="team-content">
+                            <h3>David Luiz</h3>
+                            <span>Designer</span>
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="icofont-instagram"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="icofont-twitter"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team-member">
+                        <img src="img/team-img4.jpg" alt="team">
+                        <div class="team-content">
+                            <h3>Park Tim</h3>
+                            <span>SEO Expert</span>
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="icofont-instagram"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="icofont-twitter"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team-member">
+                        <img src="img/team-img5.jpg" alt="team">
+                        <div class="team-content">
+                            <h3>Doglas Costa</h3>
+                            <span>Manager</span>
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="icofont-instagram"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="icofont-twitter"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>
+
+<!-- Only for Digital Marketing Demo -->
+<div
+    class="team-area ptb-100 bg-gray"
+    *ngIf="router.url === '/index-3'"
+>
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Smart Team</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="team-slides">
+            <owl-carousel-o [options]="teamSlides">
+                <ng-template carouselSlide>
+                    <div class="single-team-member-box">
+                        <img src="img/team-img1.jpg" alt="team">
+                        <div class="team-content">
+                            <h3>John Doe</h3>
+                            <span>CEO</span>
+                            <ul>
+                                <li><a href="#" target="_blank" class="facebook"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#" target="_blank" class="instagram"><i class="icofont-instagram"></i></a></li>
+                                <li><a href="#" target="_blank" class="twitter"><i class="icofont-twitter"></i></a></li>
+                                <li><a href="#" target="_blank" class="linkedin"><i class="icofont-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team-member-box">
+                        <img src="img/team-img2.jpg" alt="team">
+                        <div class="team-content">
+                            <h3>Steven Smith</h3>
+                            <span>Developer</span>
+                            <ul>
+                                <li><a href="#" target="_blank" class="facebook"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#" target="_blank" class="instagram"><i class="icofont-instagram"></i></a></li>
+                                <li><a href="#" target="_blank" class="twitter"><i class="icofont-twitter"></i></a></li>
+                                <li><a href="#" target="_blank" class="linkedin"><i class="icofont-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team-member-box">
+                        <img src="img/team-img3.jpg" alt="team">
+                        <div class="team-content">
+                            <h3>David Luiz</h3>
+                            <span>Designer</span>
+                            <ul>
+                                <li><a href="#" target="_blank" class="facebook"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#" target="_blank" class="instagram"><i class="icofont-instagram"></i></a></li>
+                                <li><a href="#" target="_blank" class="twitter"><i class="icofont-twitter"></i></a></li>
+                                <li><a href="#" target="_blank" class="linkedin"><i class="icofont-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team-member-box">
+                        <img src="img/team-img4.jpg" alt="team">
+                        <div class="team-content">
+                            <h3>Park Tim</h3>
+                            <span>SEO Expert</span>
+                            <ul>
+                                <li><a href="#" target="_blank" class="facebook"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#" target="_blank" class="instagram"><i class="icofont-instagram"></i></a></li>
+                                <li><a href="#" target="_blank" class="twitter"><i class="icofont-twitter"></i></a></li>
+                                <li><a href="#" target="_blank" class="linkedin"><i class="icofont-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team-member-box">
+                        <img src="img/team-img5.jpg" alt="team">
+                        <div class="team-content">
+                            <h3>Doglas Costa</h3>
+                            <span>Manager</span>
+                            <ul>
+                                <li><a href="#" target="_blank" class="facebook"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#" target="_blank" class="instagram"><i class="icofont-instagram"></i></a></li>
+                                <li><a href="#" target="_blank" class="twitter"><i class="icofont-twitter"></i></a></li>
+                                <li><a href="#" target="_blank" class="linkedin"><i class="icofont-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>
+
+<!-- Only for Book Landing Demo -->
+<div
+    class="team-area ptb-100 bg-gray"
+    *ngIf="router.url === '/index-6'"
+>
+    <div class="container">
+        <div class="section-title">
+            <h2>Awesome Contributors</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="team-slides">
+            <owl-carousel-o [options]="teamSlides">
+                <ng-template carouselSlide>
+                    <div class="single-team-member-box">
+                        <img src="img/team-img1.jpg" alt="team">
+                        <div class="team-content">
+                            <h3>John Doe</h3>
+                            <span>CEO</span>
+                            <ul>
+                                <li><a href="#" class="facebook" target="_blank"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#" class="instagram" target="_blank"><i class="icofont-instagram"></i></a></li>
+                                <li><a href="#" class="twitter" target="_blank"><i class="icofont-twitter"></i></a></li>
+                                <li><a href="#" class="linkedin" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team-member-box">
+                        <img src="img/team-img2.jpg" alt="team">
+                        <div class="team-content">
+                            <h3>Steven Smith</h3>
+                            <span>Developer</span>
+                            <ul>
+                                <li><a href="#" class="facebook" target="_blank"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#" class="instagram" target="_blank"><i class="icofont-instagram"></i></a></li>
+                                <li><a href="#" class="twitter" target="_blank"><i class="icofont-twitter"></i></a></li>
+                                <li><a href="#" class="linkedin" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team-member-box">
+                        <img src="img/team-img3.jpg" alt="team">
+                        <div class="team-content">
+                            <h3>David Luiz</h3>
+                            <span>Designer</span>
+                            <ul>
+                                <li><a href="#" class="facebook" target="_blank"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#" class="instagram" target="_blank"><i class="icofont-instagram"></i></a></li>
+                                <li><a href="#" class="twitter" target="_blank"><i class="icofont-twitter"></i></a></li>
+                                <li><a href="#" class="linkedin" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team-member-box">
+                        <img src="img/team-img4.jpg" alt="team">
+                        <div class="team-content">
+                            <h3>Park Tim</h3>
+                            <span>SEO Expert</span>
+                            <ul>
+                                <li><a href="#" class="facebook" target="_blank"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#" class="instagram" target="_blank"><i class="icofont-instagram"></i></a></li>
+                                <li><a href="#" class="twitter" target="_blank"><i class="icofont-twitter"></i></a></li>
+                                <li><a href="#" class="linkedin" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ng-template>
+                    <ng-template carouselSlide>
+                    <div class="single-team-member-box">
+                        <img src="img/team-img5.jpg" alt="team">
+                        <div class="team-content">
+                            <h3>Doglas Costa</h3>
+                            <span>Manager</span>
+                            <ul>
+                                <li><a href="#" class="facebook" target="_blank"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#" class="instagram" target="_blank"><i class="icofont-instagram"></i></a></li>
+                                <li><a href="#" class="twitter" target="_blank"><i class="icofont-twitter"></i></a></li>
+                                <li><a href="#" class="linkedin" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>
+
+<!-- Only for Startup Agency Demo -->
+<div
+    class="team-area ptb-100 bg-gray"
+    *ngIf="router.url === '/index-7'"
+>
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Smart Team</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="team-slides">
+            <owl-carousel-o [options]="teamSlides">
+                <ng-template carouselSlide>
+                    <div class="single-team-member-box">
+                        <img src="img/team-img1.jpg" alt="team">
+                        <div class="team-content">
+                            <h3>John Doe</h3>
+                            <span>CEO</span>
+                            <ul>
+                                <li><a href="#" class="facebook" target="_blank"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#" class="instagram" target="_blank"><i class="icofont-instagram"></i></a></li>
+                                <li><a href="#" class="twitter" target="_blank"><i class="icofont-twitter"></i></a></li>
+                                <li><a href="#" class="linkedin" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                <div class="single-team-member-box">
+                        <img src="img/team-img2.jpg" alt="team">
+                        <div class="team-content">
+                            <h3>Steven Smith</h3>
+                            <span>Developer</span>
+                            <ul>
+                                <li><a href="#" class="facebook" target="_blank"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#" class="instagram" target="_blank"><i class="icofont-instagram"></i></a></li>
+                                <li><a href="#" class="twitter" target="_blank"><i class="icofont-twitter"></i></a></li>
+                                <li><a href="#" class="linkedin" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team-member-box">
+                        <img src="img/team-img3.jpg" alt="team">
+                        <div class="team-content">
+                            <h3>David Luiz</h3>
+                            <span>Designer</span>
+                            <ul>
+                                <li><a href="#" class="facebook" target="_blank"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#" class="instagram" target="_blank"><i class="icofont-instagram"></i></a></li>
+                                <li><a href="#" class="twitter" target="_blank"><i class="icofont-twitter"></i></a></li>
+                                <li><a href="#" class="linkedin" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team-member-box">
+                        <img src="img/team-img4.jpg" alt="team">
+                        <div class="team-content">
+                            <h3>Park Tim</h3>
+                            <span>SEO Expert</span>
+                            <ul>
+                                <li><a href="#" class="facebook" target="_blank"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#" class="instagram" target="_blank"><i class="icofont-instagram"></i></a></li>
+                                <li><a href="#" class="twitter" target="_blank"><i class="icofont-twitter"></i></a></li>
+                                <li><a href="#" class="linkedin" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team-member-box">
+                        <img src="img/team-img5.jpg" alt="team">
+                        <div class="team-content">
+                            <h3>Doglas Costa</h3>
+                            <span>Manager</span>
+                            <ul>
+                                <li><a href="#" class="facebook" target="_blank"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#" class="instagram" target="_blank"><i class="icofont-instagram"></i></a></li>
+                                <li><a href="#" class="twitter" target="_blank"><i class="icofont-twitter"></i></a></li>
+                                <li><a href="#" class="linkedin" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>

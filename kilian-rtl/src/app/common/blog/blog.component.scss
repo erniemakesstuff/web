@@ -1,0 +1,131 @@
+.single-blog-post {
+    margin-bottom: 30px;
+    background: var(--whiteColor);
+    box-shadow: rgba(100, 100, 111, 0.12) 0px 7px 29px 0px;
+
+    .post-image {
+        display: block;
+    }
+    .blog-post-content {
+        padding: 30px;
+
+        ul {
+            padding: 0;
+            list-style-type: none;
+            margin: 0;
+
+            li {
+                display: inline-block;
+                margin-left: 10px;
+                font-size: 15px;
+                color: var(--paragraphColor);
+
+                &:last-child {
+                    margin-left: 0;
+                }
+                i {
+                    color: var(--primaryColor);
+                    margin-left: 4px;
+                }
+                a {
+                    color: var(--paragraphColor);
+
+                    &:hover {
+                        color: var(--primaryColor);
+                    }
+                }
+            }
+        }
+        h3 {
+            line-height: 30px;
+            margin: {
+                top: 15px;
+                bottom: 15px;
+            }
+            font: {
+                size: 23px;
+                weight: 700;
+            }
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .read-more-btn {
+            font-weight: 700;
+        }
+    }
+}
+::ng-deep {
+    .blog-slides {
+        .owl-theme {
+            .owl-nav {
+                line-height: .01;
+                margin: {
+                    top: 5px;
+                    bottom: -8px;
+                };
+                [class*=owl-] {
+                    color: var(--secondaryColor);
+                    background: transparent;
+                    display: inline-block;
+                    border-radius: 0;
+                    transition: .4s;
+                    font-size: 30px;
+                    cursor: pointer;
+                    margin: 0 3px;
+                    padding: 0;
+    
+                    &:hover {
+                        color: var(--primaryColor);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .single-blog-post {
+        .blog-post-content {
+            padding: 20px;
+
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+    ::ng-deep {
+        .blog-slides {
+            .owl-theme {
+                .owl-nav {
+                    margin: {
+                        top: 0;
+                        bottom: -8px;
+                    };
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .single-blog-post {
+        .blog-post-content {
+            h3 {
+                font-size: 21px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1350px) {}
+
+@media only screen and (min-width: 1910px) {}
+
+@media only screen and (max-width: 767px) {}

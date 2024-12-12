@@ -1,0 +1,42 @@
+<div class="gallery-area ptb-100 pb-0">
+    <div class="container">
+        <div class="section-title">
+            <h2>User Gallery</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+    <div class="row m-0">
+        @for (image of images; track image) {
+            <div class="col-lg-3 col-md-6 p-0">
+                <div class="single-image">
+                    <img [src]="image" alt="gallery">
+                    <button type="button" class="popup-btn" (click)="openPopup(image)">
+                        <i class="icofont-plus"></i>
+                    </button>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- Popup -->
+<div
+    class="mfp-wrap mfp-gallery mfp-close-btn-in mfp-auto-cursor mfp-ready"
+    tabindex="-1" style="overflow: hidden auto;"
+    *ngIf="selectedImage"
+>
+    <div class="mfp-container mfp-s-ready mfp-image-holder">
+        <div class="mfp-content">
+            <div class="mfp-figure">
+                <button title="Close (Esc)" type="button" class="mfp-close" (click)="closePopup()">
+                    ×
+                </button>
+                <figure>
+                    <img class="mfp-img" [src]="selectedImage" style="max-height: 495px;">
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mfp-bg mfp-ready" *ngIf="selectedImage"></div>

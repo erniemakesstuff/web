@@ -1,0 +1,262 @@
+<!-- Default -->
+<div
+    class="fun-facts-area ptb-100"
+    [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-3' || router.url === '/index-5' || router.url === '/index-6' || router.url === '/index-7'}"
+>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="single-funfact">
+                    <div class="icon">
+                        <i class="icofont-users"></i>
+                    </div>
+                    <h3>806</h3>
+                    <p>Satisfied Client</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-funfact">
+                    <div class="icon">
+                        <i class="icofont-thumbs-up"></i>
+                    </div>
+                    <h3>202</h3>
+                    <p>Appriciation</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-funfact">
+                    <div class="icon">
+                        <i class="icofont-diamond"></i>
+                    </div>
+                    <h3>10</h3>
+                    <p>Response time</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-funfact">
+                    <div class="icon">
+                        <i class="icofont-wrench"></i>
+                    </div>
+                    <h3>512</h3>
+                    <p>Data Entry</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fun-facts-inner-area">
+        <div class="container-fluid">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="fun-facts-image">
+                        <img src="img/features-img2.png" alt="image">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="fun-facts-inner-content">
+                        <h3>Build Beautiful Interface Into Your Application</h3>
+                        <p>Funding freemium technology focus equity bootstrapping usernce niche market. Seed round agile development growth hacking retur investment alpha. Investor advisor marketing pitch gen scrum project.</p>
+                        <p>Responsive web design. Agile development innovator termsheet is users interface pitch scrum project research & development.</p>
+                        <ul>
+                            <li>Unimited Video Call</li>
+                            <li>Add Favourite contact</li>
+                            <li>Camera Filter</li>
+                        </ul>
+                        <a routerLink="/about-us" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Only for App Landing & Software Landing Demo -->
+<div
+    class="app-funfacts-area ptb-100"
+    *ngIf="router.url === '/index-2' || router.url === '/index-5'"
+    style="background-image: url(img/cta-bg.jpg);"
+>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-6">
+                <div class="single-funfact">
+                    <div class="icon">
+                        <i class="icofont-download"></i>
+                    </div>
+                    <h3>1.5B</h3>
+                    <p>Download</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+                <div class="single-funfact">
+                    <div class="icon">
+                        <i class="icofont-star"></i>
+                    </div>
+                    <h3>4.8</h3>
+                    <p>Rating</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+                <div class="single-funfact">
+                    <div class="icon">
+                        <i class="icofont-user-suited"></i>
+                    </div>
+                    <h3>500M</h3>
+                    <p>Active User</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+                <div class="single-funfact">
+                    <div class="icon">
+                        <i class="icofont-thumbs-up"></i>
+                    </div>
+                    <h3>13K</h3>
+                    <p>Updates</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Only for Digital Marketing Demo -->
+<div
+    class="app-funfacts-area ptb-100"
+    *ngIf="router.url === '/index-3'"
+    style="background-image: url(img/cta-bg.jpg);"
+>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="single-funfact-box">
+                    <div class="icon">
+                        <i class="icofont-users-alt-5"></i>
+                    </div>
+                    <h3>2150+</h3>
+                    <p>Active Clients</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-funfact-box">
+                    <div class="icon">
+                        <i class="icofont-rocket-alt-1"></i>
+                    </div>
+                    <h3>86%</h3>
+                    <p>Success Rate</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-funfact-box">
+                    <div class="icon">
+                        <i class="icofont-laptop-alt"></i>
+                    </div>
+                    <h3>550+</h3>
+                    <p>Projects Done</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-funfact-box">
+                    <div class="icon">
+                        <i class="icofont-win-trophy"></i>
+                    </div>
+                    <h3>35+</h3>
+                    <p>Awards</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Only for Book Landing Demo -->
+<div
+    class="app-funfacts-area ptb-100"
+    *ngIf="router.url === '/index-6'"
+    style="background-image: url(img/cta-bg.jpg);"
+>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <div class="single-funfact">
+                    <div class="icon">
+                        <i class="icofont-book-alt"></i>
+                    </div>
+                    <h3>5M</h3>
+                    <p>Copies Sold</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="single-funfact">
+                    <div class="icon">
+                        <i class="icofont-coffee-alt"></i>
+                    </div>
+                    <h3>1.5M</h3>
+                    <p>Cup Of Coffe</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="single-funfact">
+                    <div class="icon">
+                        <i class="icofont-book-mark"></i>
+                    </div>
+                    <h3>1M</h3>
+                    <p>Copies Released</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="single-funfact">
+                    <div class="icon">
+                        <i class="icofont-ui-user"></i>
+                    </div>
+                    <h3>50K</h3>
+                    <p>Happy Readers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Only for Startup Agency Demo -->
+<div
+    class="app-funfacts-area ptb-100"
+    *ngIf="router.url === '/index-7'"
+    style="background-image: url(img/cta-bg.jpg);"
+>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="single-funfact-box">
+                    <div class="icon">
+                        <i class="icofont-users-alt-5"></i>
+                    </div>
+                    <h3>2150+</h3>
+                    <p>Active Clients</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-funfact-box">
+                    <div class="icon">
+                        <i class="icofont-rocket-alt-1"></i>
+                    </div>
+                    <h3>86%</h3>
+                    <p>Success Rate</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-funfact-box">
+                    <div class="icon">
+                        <i class="icofont-laptop-alt"></i>
+                    </div>
+                    <h3>550+</h3>
+                    <p>Projects Done</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-funfact-box">
+                    <div class="icon">
+                        <i class="icofont-win-trophy"></i>
+                    </div>
+                    <h3>35+</h3>
+                    <p>Awards</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

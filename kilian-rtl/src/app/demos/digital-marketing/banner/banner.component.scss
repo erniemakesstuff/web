@@ -1,0 +1,295 @@
+.main-banner {
+    z-index: 1;
+    height: 840px;
+    position: relative;
+    background: var(--whiteColor) url("../../../../../public/img/bg-point.png") no-repeat fixed left -500px center/auto;
+
+    .hero-content {
+        h1 {
+            margin: 0;
+            color: var(--blackColor);
+            font: {
+                size: 60px;
+                weight: 700;
+            };
+        }
+        p {
+            color: var(--paragraphColor);
+            font-size: 18px;
+            margin: {
+                top: 30px;
+                bottom: 35px;
+            };
+        }
+        .btn {
+            &:hover {
+                &::after, &::before {
+                    background: var(--primaryColor);
+                }
+            }
+        }
+        .btn-primary {
+            &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+                background: var(--primaryColor);
+                color: var(--whiteColor);
+            }
+            &:hover, &:focus {
+                background: var(--primaryColor);
+                color: var(--whiteColor);
+            }
+        }
+        .video-btn {
+            color: #716c80;
+            margin-right: 15px;
+            text-transform: uppercase;
+            font: {
+                size: 15px;
+                weight: 700;
+            };
+            i {
+                top: 4px;
+                font-size: 30px;
+                transition: .4s;
+                margin-right: 5px;
+                position: relative;
+            }
+            &:hover {
+                i {
+                    color: var(--primaryColor);
+                }
+            }
+        }
+    }
+    .marketing-image {
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        img {
+            position: absolute;
+
+            &:nth-child(1) {
+                left: 0;
+                top: -45px;
+            }
+            &:nth-child(2) {
+                right: 90px;
+                top: -30px;
+            }
+            &:nth-child(3) {
+                right: 60px;
+                top: 165px;
+            }
+            &:nth-child(4) {
+                right: 0;
+                left: -15px;
+                text-align: center;
+                margin: 0 auto;
+                top: 185px;
+            }
+            &:nth-child(5) {
+                bottom: -55px;
+                left: 0;
+            }
+            &:nth-child(6) {
+                bottom: -50px;
+                left: 140px;
+            }
+            &:nth-child(7) {
+                right: 198px;
+                bottom: -55px;
+            }
+            &:nth-child(8) {
+                right: 80px;
+                bottom: -40px;
+            }
+            &:nth-child(9) {
+                left: 65px;
+                bottom: 0;
+                animation: rotate3d 4s linear infinite;
+            }
+            &:nth-child(10) {
+                right: 50px;
+                top: 85px;
+            }
+            &:nth-child(11) {
+                left: 195px;
+                bottom: -55px;
+            }
+            &:nth-child(12) {
+                top: 100px;
+                left: -4px;
+                right: 0;
+                text-align: center;
+                margin: 0 auto;
+            }
+            &:nth-child(13) {
+                right: 62px;
+                left: 0;
+                margin: 0 auto;
+                text-align: center;
+                top: 20px;
+                animation: rotate3d 6s linear infinite;
+            }
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .main-banner {
+        height: 100%;
+        overflow: hidden;
+        padding: {
+            top: 140px;
+            bottom: 90px;
+        };
+        .hero-content {
+            h1 {
+                font-size: 34px;
+            }
+            p {
+                font-size: 16px;
+                margin: {
+                    top: 20px;
+                    bottom: 25px;
+                };
+            }
+            .video-btn {
+                font-size: 14px;
+                margin-right: 8px;
+
+                i {
+                    font-size: 23px;
+                    margin-right: 3px;
+                }
+            }
+            &.pl-4 {
+                padding-right: 0 !important;
+            }
+        }
+        .marketing-image {
+            margin-top: 40px;
+
+            img {
+                display: none;
+                position: relative;
+
+                &:last-child {
+                    display: block;
+                }
+            }
+        }
+        .shape4, .shape2 {
+            display: none;
+        }
+        .shape1 {
+            display: none;
+        }
+        .shape3 {
+            bottom: 10px;
+            left: 0;
+        }
+        .bubble-animate, .shape6 {
+            display: none;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .main-banner {
+        height: 100%;
+        padding: {
+            top: 170px;
+            bottom: 150px;
+        };
+        .hero-content {
+            margin-bottom: 45px;
+
+            h1 {
+                font-size: 50px;
+            }
+            &.pl-4 {
+                padding-right: 0 !important;
+            }
+        }
+        .marketing-image {
+            text-align: center;
+
+            img {
+                position: relative;
+                display: none;
+
+                &:last-child {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .shape3, .shape1 {
+            display: none;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .main-banner {
+        height: 100%;
+        padding: {
+            top: 195px;
+            bottom: 160px;
+        };
+        .hero-content {
+            &.pl-4 {
+                padding-right: 0 !important;
+            }
+            h1 {
+                font-size: 50px;
+            }
+        }
+        .marketing-image {
+            img {
+                position: relative;
+                display: none;
+
+                &:last-child {
+                    display: block;
+                }
+            }
+        }
+        .shape1 {
+            display: none;
+        }
+        .shape4, .shape1 {
+            display: none;
+        }
+        .shape6 {
+            opacity: .3;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1350px) {}
+
+@media only screen and (min-width: 1910px) {
+
+    .main-banner {
+        height: 100vh;
+
+        .shape4 {
+            right: 20%;
+            top: 23%;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 767px) {}

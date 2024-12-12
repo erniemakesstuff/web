@@ -1,0 +1,91 @@
+<div class="main-banner marketing-home">
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="hero-content">
+                            <h1>Grow you business startup system better</h1>
+                            <p>Our passion to work hard and deliver excellent results. It could solve the needs of your customers and develop innovation.</p>
+                            <a routerLink="/contact-us" class="btn btn-primary">
+                                Get Started
+                            </a>
+                            <button
+                                type="button"
+                                (click)="openPopup()"
+                                class="video-btn popup-youtube border-0 p-0 bg-transparent"
+                            >
+                                Watch Video <i class="icofont-play-alt-3"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="marketing-image">
+                            <img src="img/marketing-shape/marketing-img1.png" class="animate__animated animate__fadeInDown" alt="img">
+                            <img src="img/marketing-shape/marketing-img2.png" class="animate__animated animate__fadeInLeft" alt="img">
+                            <img src="img/marketing-shape/marketing-img3.png" class="animate__animated animate__lightSpeedIn" alt="img">
+                            <img src="img/marketing-shape/marketing-img4.png" class="animate__animated animate__rollIn" alt="img">
+                            <img src="img/marketing-shape/marketing-img5.png" class="animate__animated animate__fadeInUp" alt="img">
+                            <img src="img/marketing-shape/marketing-img6.png" class="animate__animated animate__fadeInDown" alt="img">
+                            <img src="img/marketing-shape/marketing-img7.png" class="animate__animated animate__flip" alt="img">
+                            <img src="img/marketing-shape/marketing-img8.png" class="animate__animated animate__zoomIn" alt="img">
+                            <img src="img/shape6.png" alt="img">
+                            <img src="img/marketing-shape/marketing-img9.png" class="animate__animated animate__fadeInUp" alt="img">
+                            <img src="img/marketing-shape/marketing-img10.png" class="animate__animated animate__fadeInUp" alt="img">
+                            <img src="img/marketing-shape/marketing-img11.png" class="animate__animated animate__flip" alt="img">
+                            <img src="img/marketing-shape/marketing-img12.png" class="animate__animated animate__lightSpeedIn" alt="img">
+                            <img src="img/marketing-shape/main-image.png" class="animate__animated animate__fadeInUp" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-gray shape-1"></div>
+    <div class="shape1"><img src="img/shape1.png" alt="img"></div>
+    <div class="shape2"><img src="img/shape2.png" alt="img"></div>
+    <div class="shape3"><img src="img/shape3.png" alt="img"></div>
+    <div class="shape6"><img src="img/shape6.png" alt="img"></div>
+    <div class="shape8 rotateme"><img src="img/shape8.svg" alt="shape"></div>
+    <div class="shape9"><img src="img/shape9.svg" alt="shape"></div>
+    <div class="bubble-animate"><!-- Bubble Animte -->
+        <div class="circle small square1"></div>
+        <div class="circle small square2"></div>
+        <div class="circle small square3"></div>
+        <div class="circle small square4"></div>
+        <div class="circle small square5"></div>
+        <div class="circle medium square1"></div>
+        <div class="circle medium square2"></div>
+        <div class="circle medium square3"></div>
+        <div class="circle medium square4"></div>
+        <div class="circle medium square5"></div>
+        <div class="circle large square1"></div>
+        <div class="circle large square2"></div>
+        <div class="circle large square3"></div>
+        <div class="circle large square4"></div>
+    </div>
+</div>
+
+<!-- Video Popup -->
+<div
+    class="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-fade mfp-ready"
+    *ngIf="isOpen"
+    tabindex="-1"
+>
+    <div class="mfp-container mfp-iframe-holder">
+        <div class="mfp-content">
+            <div class="mfp-iframe-scaler">
+                <button
+                    (click)="closePopup()"
+                    title="Close (Esc)"
+                    type="button"
+                    class="mfp-close"
+                >
+                    ×
+                </button>
+                <iframe src="https://www.youtube.com/embed/u31qwQUeGuM" title="Placeholder video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mfp-bg mfp-fade mfp-ready" *ngIf="isOpen"></div>

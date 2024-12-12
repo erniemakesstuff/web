@@ -1,0 +1,51 @@
+.single-image {
+    text-align: center;
+    position: relative;
+
+    &::before {
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        content: '';
+        height: 100%;
+        transition: .4s;
+        position: absolute;
+        visibility: hidden;
+        transform: scale(.8);
+        background: var(--blackColor);
+    }
+    .popup-btn {
+        left: 0;
+        top: 50%;
+        right: 0;
+        border: 0;
+        padding: 0;
+        opacity: 0;
+        margin: 0 auto;
+        font-size: 30px;
+        transition: .4s;
+        margin-top: -20px;
+        visibility: hidden;
+        position: absolute;
+        transform: scale(0);
+        color: var(--whiteColor);
+        background-color: transparent;
+
+        &:hover {
+            color: var(--primaryColor);
+        }
+    }
+    &:hover {
+        &::before {
+            opacity: .8;
+            visibility: visible;
+            transform: scale(1);
+        }
+        .popup-btn {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+        }
+    }
+}

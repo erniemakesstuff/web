@@ -1,0 +1,112 @@
+<!-- Default -->
+<div
+    class="screenshot-area ptb-100"
+    [ngClass]="{'d-none': router.url === '/index-6'}"
+>
+    <div class="container">
+        <div class="section-title">
+            <h2>Screenshots</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="screenshot-contain">
+                    <img src="img/mobile.png" class="mobile-light" alt="mobile">
+                    <div class="screenshot-slides">
+                        <owl-carousel-o [options]="screenshotsSlides">
+                            <ng-template carouselSlide>
+                                <div class="screenshot-item">
+                                    <img src="img/screenshot-img1.png" alt="screenshot">
+                                </div>
+                            </ng-template>
+                            <ng-template carouselSlide>
+                                <div class="screenshot-item">
+                                    <img src="img/screenshot-img4.png" alt="screenshot">
+                                </div>
+                            </ng-template>
+                            <ng-template carouselSlide>
+                                <div class="screenshot-item">
+                                    <img src="img/screenshot-img2.png" alt="screenshot">
+                                </div>
+                            </ng-template>
+                            <ng-template carouselSlide>
+                                <div class="screenshot-item">
+                                    <img src="img/screenshot-img3.png" alt="screenshot">
+                                </div>
+                            </ng-template>
+                            <ng-template carouselSlide>
+                                <div class="screenshot-item">
+                                    <img src="img/screenshot-img4.png" alt="screenshot">
+                                </div>
+                            </ng-template>
+                            <ng-template carouselSlide>
+                                <div class="screenshot-item">
+                                    <img src="img/screenshot-img1.png" alt="screenshot">
+                                </div>
+                            </ng-template>
+                            <ng-template carouselSlide>
+                                <div class="screenshot-item">
+                                    <img src="img/screenshot-img2.png" alt="screenshot">
+                                </div>
+                            </ng-template>
+                        </owl-carousel-o>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Only for Book Landing Demo -->
+<div
+    class="screenshot-area page-from-book ptb-100"
+    *ngIf="router.url === '/index-6'"
+>
+    <div class="container">
+        <div class="section-title">
+            <h2>Pages From Book</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="screenshot-slides">
+            <owl-carousel-o [options]="screenshotsSlides">
+                <ng-template carouselSlide>
+                    <div class="screenshot-item">
+                        <img src="img/page1.jpg" alt="screenshot">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="screenshot-item">
+                        <img src="img/page1.jpg" alt="screenshot">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="screenshot-item">
+                        <img src="img/page1.jpg" alt="screenshot">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="screenshot-item">
+                        <img src="img/page1.jpg" alt="screenshot">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="screenshot-item">
+                        <img src="img/page1.jpg" alt="screenshot">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="screenshot-item">
+                        <img src="img/page1.jpg" alt="screenshot">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="screenshot-item">
+                        <img src="img/page1.jpg" alt="screenshot">
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+.back-to-top {
+    z-index: 3;
+    right: 1.5%;
+    width: 40px;
+    bottom: 1.25%;
+    height: 15px;
+    cursor: pointer;
+    position: fixed;
+    padding: 3px 5px;
+    color: transparent;
+    text-align: center;
+    outline: 0 !important;
+    transition: all 0.25s ease-in-out;
+    background-color: var(--paragraphColor);
+    font: {
+        size: 10px;
+        weight: bold;
+    };
+    &::before, &::after {
+        border: 20px solid transparent;
+        position: absolute;
+        border-top: 0;
+        content: '';
+        height: 0;
+        width: 0;
+        left: 0;
+    }
+    &::before {
+        top: -20px;
+        z-index: 4;
+        border-bottom: 20px solid var(--paragraphColor);
+    }
+    &::after {
+        bottom: 0;
+        z-index: 5;
+        border-bottom: 20px solid var(--primaryColor);
+    }
+    &:hover, &:focus {
+        opacity: 1;
+        height: 40px;
+        text-decoration: none;
+        color: var(--whiteColor);
+    }
+}

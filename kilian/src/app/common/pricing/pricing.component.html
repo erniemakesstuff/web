@@ -1,0 +1,297 @@
+<!-- Default -->
+<div
+    class="pricing-area ptb-100 bg-gray"
+    [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-3' || router.url === '/index-6' || router.url === '/index-7'}"
+>
+    <div class="container">
+        <div class="section-title">
+            <h2>Easy Pricing Plans</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="pricingTable">
+                    <div class="pricing-icon">
+                        <i class="icofont-globe"></i>
+                    </div>
+                    <div class="price-Value">
+                        <span class="currency">$</span>15
+                    </div>
+                    <span class="month">/Month</span>
+                    <div class="pricingHeader">
+                        <h3 class="title">Personal</h3>
+                    </div>
+                    <div class="pricing-content">
+                        <ul>
+                            <li class="active">Send 5 invoices and quotes</li>
+                            <li class="active">2 Clients and Products</li>
+                            <li class="active">Invoicing and Payments</li>
+                            <li class="active">Enter 5 bills</li>
+                            <li class="active">Data Security and Backups</li>
+                            <li>Unlimited Staff Accounts</li>
+                            <li>Web Booking Widget</li>
+                            <li>Monthly Reports and Analytics</li>
+                            <li>24/7 Support</li>
+                        </ul>
+                    </div>
+                    <a routerLink="." class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="pricingTable">
+                    <div class="pricing-icon">
+                        <i class="icofont-globe"></i>
+                    </div>
+                    <div class="price-Value">
+                        <span class="currency">$</span>39
+                    </div>
+                    <span class="month">/Month</span>
+                    <div class="pricingHeader">
+                        <h3 class="title">Business</h3>
+                    </div>
+                    <div class="pricing-content">
+                        <ul>
+                            <li class="active">Send 5 invoices and quotes</li>
+                            <li class="active">2 Clients and Products</li>
+                            <li class="active">Invoicing and Payments</li>
+                            <li class="active">Enter 5 bills</li>
+                            <li class="active">Data Security and Backups</li>
+                            <li class="active">Unlimited Staff Accounts</li>
+                            <li class="active">Web Booking Widget</li>
+                            <li>Monthly Reports and Analytics</li>
+                            <li>24/7 Support</li>
+                        </ul>
+                    </div>
+                    <a routerLink="." class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="pricingTable">
+                    <div class="pricing-icon">
+                        <i class="icofont-globe"></i>
+                    </div>
+                    <div class="price-Value">
+                        <span class="currency">$</span>99
+                    </div>
+                    <span class="month">/Month</span>
+                    <div class="pricingHeader">
+                        <h3 class="title">Enterprise</h3>
+                    </div>
+                    <div class="pricing-content">
+                        <ul>
+                            <li class="active">Send 5 invoices and quotes</li>
+                            <li class="active">2 Clients and Products</li>
+                            <li class="active">Invoicing and Payments</li>
+                            <li class="active">Enter 5 bills</li>
+                            <li class="active">Data Security and Backups</li>
+                            <li class="active">Unlimited Staff Accounts</li>
+                            <li class="active">Web Booking Widget</li>
+                            <li class="active">Monthly Reports and Analytics</li>
+                            <li class="active">24/7 Support</li>
+                        </ul>
+                    </div>
+                    <a routerLink="." class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Only for App Landing Demo -->
+<div
+    class="pricing-area ptb-100"
+    *ngIf="router.url === '/index-2'"
+>
+    <div class="container">
+        <div class="section-title">
+            <h2>Easy Pricing Plans</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing-table">
+                    <div class="price-header">
+                        <h3 class="title">Personal</h3>
+                        <div class="price"><span class="dollar">$</span>15<span class="month">/Mo</span></div>
+                    </div>
+                    <div class="price-body">
+                        <ul>
+                            <li><b>Free</b> Security Service</li>
+                            <li><b>1x</b> Security Service</li>
+                            <li><b>Unlimited</b> Security Service</li>
+                            <li><b>1x</b> Dashboard Access</li>
+                            <li><b>3x</b> Job Listings</li>
+                            <li><b>5x</b> invoices and quotes</li>
+                        </ul>
+                    </div>
+                    <div class="price-footer">
+                        <a class="btn btn-primary" routerLink=".">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing-table">
+                    <div class="price-header">
+                        <h3 class="title">Business</h3>
+                        <div class="price"><span class="dollar">$</span>39<span class="month">/Mo</span></div>
+                    </div>
+                    <div class="price-body">
+                        <ul>
+                            <li><b>Free</b> Security Service</li>
+                            <li><b>1x</b> Security Service</li>
+                            <li><b>Unlimited</b> Security Service</li>
+                            <li><b>1x</b> Dashboard Access</li>
+                            <li><b>3x</b> Job Listings</li>
+                            <li><b>5x</b> invoices and quotes</li>
+                        </ul>
+                    </div>
+                    <div class="price-footer">
+                        <a class="btn btn-primary" routerLink=".">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing-table">
+                    <div class="price-header">
+                        <h3 class="title">Enterprise</h3>
+                        <div class="price"><span class="dollar">$</span>99<span class="month">/Mo</span></div>
+                    </div>
+                    <div class="price-body">
+                        <ul>
+                            <li><b>Free</b> Security Service</li>
+                            <li><b>1x</b> Security Service</li>
+                            <li><b>Unlimited</b> Security Service</li>
+                            <li><b>1x</b> Dashboard Access</li>
+                            <li><b>3x</b> Job Listings</li>
+                            <li><b>5x</b> invoices and quotes</li>
+                        </ul>
+                    </div>
+                    <div class="price-footer">
+                        <a class="btn btn-primary" routerLink=".">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Only for Digital Marketing & Startup Agency Demo -->
+<div
+    class="pricing-area ptb-100"
+    *ngIf="router.url === '/index-3' || router.url === '/index-7'"
+>
+    <div class="container">
+        <div class="section-title">
+            <h2>Easy Pricing Plans</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing-table-box">
+                    <div class="pricingTable-header">
+                        <h3 class="title">Basic</h3>
+                        <div class="price-value"><sup>$</sup>59.99 <span>/per year</span></div>
+                    </div>
+                    <ul class="pricing-content">
+                        <li>Managment & Marketing</li>
+                        <li>SEO Optimization</li>
+                        <li>25 Analytics Campaign</li>
+                        <li>1,300 Change Keywords</li>
+                        <li>25 Social Media Reviews</li>
+                        <li>1 Free Optimization</li>
+                        <li>24/7 Support</li>
+                    </ul>
+                    <a routerLink="." class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing-table-box">
+                    <div class="pricingTable-header">
+                        <h3 class="title">Ultra</h3>
+                        <div class="price-value"><sup>$</sup>79.99 <span>/per year</span></div>
+                    </div>
+                    <ul class="pricing-content">
+                        <li>Managment & Marketing</li>
+                        <li>SEO Optimization</li>
+                        <li>25 Analytics Campaign</li>
+                        <li>1,300 Change Keywords</li>
+                        <li>25 Social Media Reviews</li>
+                        <li>1 Free Optimization</li>
+                        <li>24/7 Support</li>
+                    </ul>
+                    <a routerLink="." class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing-table-box">
+                    <div class="pricingTable-header">
+                        <h3 class="title">Pro</h3>
+                        <div class="price-value"><sup>$</sup>99.99 <span>/per year</span></div>
+                    </div>
+                    <ul class="pricing-content">
+                        <li>Managment & Marketing</li>
+                        <li>SEO Optimization</li>
+                        <li>25 Analytics Campaign</li>
+                        <li>1,300 Change Keywords</li>
+                        <li>25 Social Media Reviews</li>
+                        <li>1 Free Optimization</li>
+                        <li>24/7 Support</li>
+                    </ul>
+                    <a routerLink="." class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Only for Book Landing Demo -->
+<div
+    class="pricing-area book-pricing ptb-100"
+    *ngIf="router.url === '/index-6'"
+>
+    <div class="container">
+        <div class="section-title">
+            <h2>Easy Pricing Plans</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing-table">
+                    <div class="price-header">
+                        <h3 class="title">e-Book</h3>
+                        <div class="price"><span class="dollar">$</span>6.00<span class="month">/Mo</span></div>
+                    </div>
+                    <div class="price-footer">
+                        <a class="btn btn-primary" routerLink=".">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing-table">
+                    <div class="price-header">
+                        <h3 class="title">PDF</h3>
+                        <div class="price"><span class="dollar">$</span>12.99<span class="month">/Mo</span></div>
+                    </div>
+                    <div class="price-footer">
+                        <a class="btn btn-primary" routerLink=".">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing-table">
+                    <div class="price-header">
+                        <h3 class="title">Printed</h3>
+                        <div class="price"><span class="dollar">$</span>19.00<span class="month">/Mo</span></div>
+                    </div>
+                    <div class="price-footer">
+                        <a class="btn btn-primary" routerLink=".">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

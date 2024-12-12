@@ -1,0 +1,427 @@
+<!-- Navbar -->
+<div
+    class="kilian-nav"
+    [ngClass]="{'is-sticky': isSticky, 'marketing-navbar': router.url === '/index-3'}"
+>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" routerLink="/" [ngClass]="{'d-none': router.url === '/index-3'}">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <a class="navbar-brand" routerLink="/" *ngIf="router.url === '/index-3'">
+                <img src="img/logo2.png" alt="logo">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a href="javascript:void(0)" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            Home
+                        </a>
+                        <ul class="dropdown_menu dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active">
+                                    SaaS Landing
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/index-2" routerLinkActive="active" class="nav-link">
+                                    App Landing
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/index-3" routerLinkActive="active" class="nav-link">
+                                    Digital Marketing
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/index-4" routerLinkActive="active" class="nav-link">
+                                    Product Landing
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/index-5" routerLinkActive="active" class="nav-link">
+                                    Software Landing
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/index-6" routerLinkActive="active" class="nav-link">
+                                    Book Landing
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/index-7" routerLinkActive="active" class="nav-link">
+                                    Startup Agency
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/index-8" routerLinkActive="active" class="nav-link">
+                                    Payment Processing
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a routerLink="/about-us" routerLinkActive="active">
+                            About Us
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="javascript:void(0)" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            Pages
+                        </a>
+                        <ul class="dropdown_menu dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="/about-us" routerLinkActive="active" class="nav-link">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/features" routerLinkActive="active" class="nav-link">
+                                    Features
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/services" routerLinkActive="active" class="nav-link">
+                                    Services
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/gallery" routerLinkActive="active" class="nav-link">
+                                    Gallery
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/team" routerLinkActive="active" class="nav-link">
+                                    Team
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/pricing" routerLinkActive="active" class="nav-link">
+                                    Pricing
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/portfolio" routerLinkActive="active" class="nav-link">
+                                    Portfolio
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/faq" routerLinkActive="active" class="nav-link">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/login" routerLinkActive="active" class="nav-link">
+                                    Login
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/register" routerLinkActive="active" class="nav-link">
+                                    Register
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/coming-soon" routerLinkActive="active" class="nav-link">
+                                    Coming Soon
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/not-found" routerLinkActive="active" class="nav-link">
+                                    404 Error Page
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a routerLink="/gallery" routerLinkActive="active">
+                            Gallery
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="javascript:void(0)" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            Blog
+                        </a>
+                        <ul class="dropdown_menu dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="/blog" routerLinkActive="active" class="nav-link">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/blog-details" routerLinkActive="active" class="nav-link">
+                                    Blog Details
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/contact-us" class="nav-link" routerLinkActive="active">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mr-auto others-option">
+                <ul class="navbar-nav">
+                    <li class="header-search-box">
+                        <button type="button" class="bg-transparent border-0 p-0" (click)="searchToggleClass()">
+                            <i class="icofont-search-2"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <div class="side-menu" (click)="sidebarToggleClass()">
+                            <span class="bar-1"></span>
+                            <span class="bar-2"></span>
+                            <span class="bar-3"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<!-- Search -->
+<div class="header-search" [class.open]="searchClassApplied">
+    <button type="button" class="close" (click)="searchToggleClass()">×</button>
+    <form class="header-search-form">
+        <input type="search" value="" placeholder="Type here........" />
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+</div>
+
+<!-- Sidebar -->
+<div class="sidebar-modal modal right fade" tabindex="-1" role="dialog" [class.show]="sidebarClassApplied">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" (click)="sidebarToggleClass()">
+                    <span aria-hidden="true">
+                        <i class="icofont-close"></i>
+                    </span>
+                </button>
+                <h2 class="modal-title">
+                    <a routerLink="/" class="d-inline-block">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </h2>
+            </div>
+            <div class="modal-body">
+                <div class="accordion">
+                    <div class="accordion-item rounded-0 border-0">
+                        <button
+                            type="button"
+                            (click)="toggleSection(0)"
+                            [ngClass]="{ 'open': isSectionOpen(0) }"
+                            class="accordion-button d-block text-start shadow-none fw-semibold border-0 transition border-radius"
+                        >
+                            Home
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(0) }">
+                            <div class="accordion-body">
+                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                            SaaS Landing
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/index-2" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                            App Landing
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/index-3" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                            Digital Marketing
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/index-4" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                            Product Landing
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/index-5" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                            Software Landing
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/index-6" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                            Book Landing
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/index-7" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                            Startup Agency
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/index-8" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                            Payment Processing
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item rounded-0 border-0">
+                        <a routerLink="/about-us" class="accordion-button without-icon d-block text-start shadow-none fw-semibold border-0 transition border-radius" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            About Us
+                        </a>
+                    </div>
+                    <div class="accordion-item rounded-0 border-0">
+                        <button
+                            type="button"
+                            (click)="toggleSection(1)"
+                            [ngClass]="{ 'open': isSectionOpen(1) }"
+                            class="accordion-button d-block text-start shadow-none fw-semibold border-0 transition border-radius"
+                        >
+                            Pages
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(1) }">
+                            <div class="accordion-body">
+                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/about-us" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                            About Us
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/features" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                            Features
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/services" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                            Services
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/gallery" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                            Gallery
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/team" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                            Team
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/pricing" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                            Pricing
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/portfolio" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                            Portfolio
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/faq" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                            FAQ
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/login" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                            Login
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/register" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                            Register
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/coming-soon" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                            Coming Soon
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/not-found" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                            404 Error Page
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item rounded-0 border-0">
+                        <a routerLink="/gallery" class="accordion-button without-icon d-block text-start shadow-none fw-semibold border-0 transition border-radius" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            Gallery
+                        </a>
+                    </div>
+                    <div class="accordion-item rounded-0 border-0">
+                        <button
+                            type="button"
+                            (click)="toggleSection(2)"
+                            [ngClass]="{ 'open': isSectionOpen(2) }"
+                            class="accordion-button d-block text-start shadow-none fw-semibold border-0 transition border-radius"
+                        >
+                            Blog
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(2) }">
+                            <div class="accordion-body">
+                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/blog" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                            Blog
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/blog-details" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                            Blog Details
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item rounded-0 border-0">
+                        <a routerLink="/contact" class="accordion-button without-icon d-block text-start shadow-none fw-semibold border-0 transition border-radius" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+                <div class="sidebar-modal-widget">
+                    <h3 class="title">Additional Links</h3>
+                    <ul>
+                        <li><a routerLink="/login">Login</a></li>
+                        <li><a routerLink="/register">Register</a></li>
+                        <li><a routerLink="/faq">FAQ</a></li>
+                        <li><a routerLink=".">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-modal-widget">
+                    <h3 class="title">Contact Info</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="icofont-google-map"></i>
+                            Address
+                            <span>1660 Travis Street Miramar, FL 33025, California</span>
+                        </li>
+                        <li>
+                            <i class="icofont-email"></i>
+                            Email
+                            <span>admin&#64;kilian.com</span>
+                        </li>
+                        <li>
+                            <i class="icofont-phone"></i>
+                            Phone
+                            <span>+123 456 7890</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-modal-widget">
+                    <h3 class="title">Connect With Us</h3>
+                    <ul class="social-list">
+                        <li><a href="#" target="_blank"><i class="icofont-facebook"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="icofont-twitter"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="icofont-instagram"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-backdrop fade" [class.show]="sidebarClassApplied"></div>

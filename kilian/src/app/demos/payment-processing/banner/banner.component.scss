@@ -1,0 +1,283 @@
+.main-banner {
+    background: var(--primaryColor);
+    position: relative;
+    height: 840px;
+    z-index: 1;
+
+    .hero-content {
+        position: relative;
+        top: -35px;
+
+        h1 {
+            margin: 0;
+            color: var(--whiteColor);
+            font: {
+                size: 60px;
+                weight: 700;
+            }
+        }
+        p {
+            color: #f2f2f2;
+            font-size: 18px;
+            margin: {
+                top: 30px;
+                bottom: 35px;
+            }
+        }
+        .btn {
+            &:hover {
+                &::after, &::before {
+                    background: var(--whiteColor);
+                }
+            }
+        }
+        .btn-primary {
+            &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+                color: var(--secondaryColor);
+                background: var(--whiteColor);
+            }
+            &:hover, &:focus {
+                background: var(--whiteColor);
+                color: var(--secondaryColor);
+            }
+        }
+        .video-btn {
+            margin-left: 15px;
+            color: var(--whiteColor);
+            text-transform: uppercase;
+            font: {
+                size: 15px;
+                weight: 700;
+            }
+            i {
+                font-size: 30px;
+                position: relative;
+                margin-left: 5px;
+                top: 4px;
+                transition: .4s;
+            }
+            &:hover {
+                i {
+                    color: var(--secondaryColor);
+                }
+            }
+        }
+    }
+    .paymant-processing-image {
+        position: relative;
+        top: -60px;
+
+        img {
+            position: absolute;
+
+            &:nth-child(1) {
+                top: 135px;
+                right: 0;
+                left: 30px;
+                margin: 0 auto;
+            }
+            &:nth-child(2) {
+                right: 0;
+                top: 25px;
+                z-index: 1;
+            }
+            &:nth-child(3) {
+                right: 0;
+                top: 275px;
+                left: 65%;
+                margin: 0 auto;
+                z-index: 1;
+            }
+            &:nth-child(4) {
+                top: 170px;
+                z-index: 1;
+                left: 20px;
+            }
+            &:nth-child(5) {
+                left: 115px;
+                top: 240px;
+                z-index: 1;
+            }
+            &:nth-child(6) {
+                right: 0;
+                top: -75px;
+                left: 9px;
+                margin: 0 auto;
+            }
+            &:nth-child(7) {
+                right: 0;
+                top: 23px;
+            }
+            &:nth-child(8) {
+                left: 0;
+                top: -45px;
+                z-index: -1;
+            }
+            &:nth-child(9) {
+                right: 21%;
+                top: 16px;
+            }
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .main-banner {
+        height: 100%;
+        overflow: hidden;
+        padding: {
+            top: 140px;
+            bottom: 90px;
+        };
+        .hero-content {
+            top: 0;
+
+            h1 {
+                font-size: 34px;
+            }
+            p {
+                font-size: 16px;
+                margin: {
+                    top: 20px;
+                    bottom: 25px;
+                }
+            }
+            .video-btn {
+                font-size: 14px;
+                margin-left: 8px;
+
+                i {
+                    font-size: 23px;
+                    margin-left: 3px;
+                }
+            }
+            &.pl-4 {
+                padding-left: 0 !important;
+            }
+        }
+        .paymant-processing-image {
+            margin-top: 40px;
+            top: 0;
+
+            img {
+                position: relative;
+                display: none;
+
+                &:last-child {
+                    display: block;
+                }
+            }
+        }
+        &.payment-processing-home {
+            .shape9, .shape1, .shape3, .shape6 {
+                display: none;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .main-banner {
+        height: 100%;
+        padding: {
+            top: 170px;
+            bottom: 150px;
+        };
+        .hero-content {
+            top: 0;
+            margin-bottom: 45px;
+
+            h1 {
+                font-size: 50px;
+            }
+            &.pl-4 {
+                padding-left: 0 !important;
+            }
+        }
+        .paymant-processing-image {
+            top: 0;
+            text-align: center;
+
+            img {
+                position: relative;
+                display: none;
+
+                &:last-child {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .main-banner {
+        height: 100%;
+        padding: {
+            top: 195px;
+            bottom: 160px;
+        };
+        .hero-content {
+            top: -20px;
+
+            &.pl-4 {
+                padding-left: 0 !important;
+            }
+            h1 {
+                font-size: 50px;
+            }
+        }
+        .paymant-processing-image {
+            top: 0;
+        }
+        .shape4, .shape1 {
+            display: none;
+        }
+        .shape6 {
+            opacity: .3;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1350px) {
+
+    .main-banner {
+        .hero-content {
+            top: -40px;
+        }
+        .paymant-processing-image {
+            right: 0;
+            top: -20px;
+            width: 585px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1910px) {
+
+    .main-banner {
+        height: 100vh;
+
+        .hero-content {
+            top: -50px;
+        }
+        .shape4 {
+            left: 20%;
+            top: 23%;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 767px) {}

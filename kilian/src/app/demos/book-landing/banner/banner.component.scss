@@ -1,0 +1,259 @@
+.main-banner {
+    background: var(--primaryColor);
+    position: relative;
+    height: 840px;
+    z-index: 1;
+
+    .hero-content {
+        h1 {
+            margin: 0;
+            color: var(--whiteColor);
+            font: {
+                size: 60px;
+                weight: 700;
+            }
+        }
+        p {
+            color: #f2f2f2;
+            font-size: 18px;
+            margin: {
+                top: 30px;
+                bottom: 35px;
+            }
+        }
+        .btn {
+            &:hover {
+                &::after, &::before {
+                    background: var(--whiteColor);
+                }
+            }
+        }
+        .btn-primary {
+            &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+                color: var(--secondaryColor);
+                background: var(--whiteColor);
+            }
+            &:hover, &:focus {
+                background: var(--whiteColor);
+                color: var(--secondaryColor);
+            }
+        }
+        .video-btn {
+            margin-left: 15px;
+            color: var(--whiteColor);
+            text-transform: uppercase;
+            font: {
+                size: 15px;
+                weight: 700;
+            }
+            i {
+                font-size: 30px;
+                position: relative;
+                margin-left: 5px;
+                top: 4px;
+                transition: .4s;
+            }
+            &:hover {
+                i {
+                    color: var(--secondaryColor);
+                }
+            }
+        }
+    }
+    &.book-home {
+        background: {
+            size: cover;
+            position: center;
+            attachment: fixed;
+            repeat: no-repeat;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--blackColor);
+            z-index: -1;
+            opacity: .87;
+        }
+        .hero-content {
+            span {
+                color: var(--whiteColor);
+                display: inline-block;
+                font-size: 18px;
+                margin-bottom: 10px;
+                font-weight: 700;
+                border-left: 3px solid var(--whiteColor);
+                padding-left: 10px;
+            }
+            em {
+                &.inlucdebooks {
+                    display: block;
+                    color: #f2f2f2;
+                    margin-top: 20px;
+                }
+            }
+        }
+        .book-image {
+            height: 100%;
+            width: 100%;
+            position: relative;
+
+            img {
+                position: absolute;
+                bottom: -215px;
+                right: 45px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .main-banner {
+        height: 100%;
+        overflow: hidden;
+        padding: {
+            top: 140px;
+            bottom: 90px;
+        };
+        .hero-content {
+            h1 {
+                font-size: 34px;
+            }
+            p {
+                font-size: 16px;
+                margin: {
+                    top: 20px;
+                    bottom: 25px;
+                }
+            }
+            .video-btn {
+                font-size: 14px;
+                margin-left: 8px;
+
+                i {
+                    font-size: 23px;
+                    margin-left: 3px;
+                }
+            }
+            &.pl-4 {
+                padding-left: 0 !important;
+            }
+        }
+        &.book-home {
+            .book-image {
+                margin-top: 40px;
+
+                img {
+                    position: relative;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+            .shape9, .shape2 {
+                display: none;
+            }
+            .hero-content {
+                span {
+                    font-size: 15px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .main-banner {
+        height: 100%;
+        padding: {
+            top: 170px;
+            bottom: 150px;
+        };
+        .hero-content {
+            margin-bottom: 45px;
+
+            h1 {
+                font-size: 50px;
+            }
+            &.pl-4 {
+                padding-left: 0 !important;
+            }
+        }
+        &.book-home {
+            .book-image {
+                text-align: center;
+
+                img {
+                    position: relative;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .main-banner {
+        height: 100%;
+        padding: {
+            top: 195px;
+            bottom: 160px;
+        };
+        .hero-content {
+            &.pl-4 {
+                padding-left: 0 !important;
+            }
+            h1 {
+                font-size: 50px;
+            }
+        }
+        &.book-home {
+            .book-image {
+                img {
+                    bottom: -155px;
+                    right: 45px;
+                    width: 350px;
+                }
+            }
+        }
+        .shape4, .shape1 {
+            display: none;
+        }
+        .shape6 {
+            opacity: .3;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1350px) {}
+
+@media only screen and (min-width: 1910px) {
+
+    .main-banner {
+        height: 100vh;
+
+        .book-image {
+            img {
+                bottom: -280px !important;
+                right: 0 !important;
+            }
+        }
+        .shape4 {
+            left: 20%;
+            top: 23%;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 767px) {}

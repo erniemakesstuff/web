@@ -1,0 +1,160 @@
+<div class="saas-tools ptb-100 bg-gray">
+    <div class="container">
+        <div class="section-title">
+            <h2>Tools for Everyone</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="tab">
+            <ul class="tabs">
+                <li>
+                    <button class="border-0 p-0 bg-transparent" (click)="switchTab($event, 'tab1')" [ngClass]="{'active': currentTab === 'tab1'}">
+                        <i class="icofont-dashboard-web"></i>
+                        <br>
+                        Dashboard
+                    </button>
+                </li>
+                <li>
+                    <button class="border-0 p-0 bg-transparent" (click)="switchTab($event, 'tab2')" [ngClass]="{'active': currentTab === 'tab2'}">
+                        <i class="icofont-inbox"></i>
+                        <br>
+                        Inbox
+                    </button>
+                </li>
+                <li>
+                    <button class="border-0 p-0 bg-transparent" (click)="switchTab($event, 'tab3')" [ngClass]="{'active': currentTab === 'tab3'}">
+                        <i class="icofont-ui-calendar"></i>
+                        <br>
+                        Calendar
+                    </button>
+                </li>
+                <li>
+                    <button class="border-0 p-0 bg-transparent" (click)="switchTab($event, 'tab4')" [ngClass]="{'active': currentTab === 'tab4'}">
+                        <i class="icofont-copy-invert"></i>
+                        <br>
+                        Invoicing
+                    </button>
+                </li>
+                <li>
+                    <button class="border-0 p-0 bg-transparent" (click)="switchTab($event, 'tab5')" [ngClass]="{'active': currentTab === 'tab5'}">
+                        <i class="icofont-wrench"></i>
+                        <br>
+                        Reporting
+                    </button>
+                </li>
+            </ul>
+            <div class="tab_content">
+                <div class="tabs_item" id="tab1" *ngIf="currentTab === 'tab1'">
+                    <div class="row h-100 justify-content-center align-items-center">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="tabs_item_content mt-0">
+                                <h3>Dashboard</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                                <ul>
+                                    <li><i class="icofont-ui-check"></i> Creative Design</li>
+                                    <li><i class="icofont-ui-check"></i> Retina Ready</li>
+                                    <li><i class="icofont-ui-check"></i> Modern Design</li>
+                                    <li><i class="icofont-ui-check"></i> Digital Marketing & Branding</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="tabs_item_img">
+                                <img src="img/features-img1.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs_item" id="tab2" *ngIf="currentTab === 'tab2'">
+                    <div class="row h-100 justify-content-center align-items-center">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="tabs_item_img">
+                                <img src="img/features-img1.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="tabs_item_content mb-0">
+                                <h3>Inbox</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                                <ul>
+                                    <li><i class="icofont-ui-check"></i> Creative Design</li>
+                                    <li><i class="icofont-ui-check"></i> Retina Ready</li>
+                                    <li><i class="icofont-ui-check"></i> Modern Design</li>
+                                    <li><i class="icofont-ui-check"></i> Digital Marketing & Branding</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs_item" id="tab3" *ngIf="currentTab === 'tab3'">
+                    <div class="row h-100 justify-content-center align-items-center">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="tabs_item_content mt-0">
+                                <h3>Calendar</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                                <ul>
+                                    <li><i class="icofont-ui-check"></i> Creative Design</li>
+                                    <li><i class="icofont-ui-check"></i> Retina Ready</li>
+                                    <li><i class="icofont-ui-check"></i> Modern Design</li>
+                                    <li><i class="icofont-ui-check"></i> Digital Marketing & Branding</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="tabs_item_img">
+                                <img src="img/features-img1.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs_item" id="tab4" *ngIf="currentTab === 'tab4'">
+                    <div class="row h-100 justify-content-center align-items-center">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="tabs_item_img">
+                                <img src="img/features-img1.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="tabs_item_content mb-0">
+                                <h3>Invoicing</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                                <ul>
+                                    <li><i class="icofont-ui-check"></i> Creative Design</li>
+                                    <li><i class="icofont-ui-check"></i> Retina Ready</li>
+                                    <li><i class="icofont-ui-check"></i> Modern Design</li>
+                                    <li><i class="icofont-ui-check"></i> Digital Marketing & Branding</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs_item" id="tab5" *ngIf="currentTab === 'tab5'">
+                    <div class="row h-100 justify-content-center align-items-center">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="tabs_item_content mt-0">
+                                <h3>Reporting</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                                <ul>
+                                    <li><i class="icofont-ui-check"></i> Creative Design</li>
+                                    <li><i class="icofont-ui-check"></i> Retina Ready</li>
+                                    <li><i class="icofont-ui-check"></i> Modern Design</li>
+                                    <li><i class="icofont-ui-check"></i> Digital Marketing & Branding</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="tabs_item_img">
+                                <img src="img/features-img1.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shape1" [ngClass]="{'d-none': router.url === '/index-2'}"><img src="img/shape1.png" alt="img"></div>
+    <div class="shape2" [ngClass]="{'d-none': router.url === '/index-2'}"><img src="img/shape2.png" alt="img"></div>
+    <div class="shape3" [ngClass]="{'d-none': router.url === '/index-2'}"><img src="img/shape3.png" alt="img"></div>
+    <div class="shape6" [ngClass]="{'d-none': router.url === '/index-2'}"><img src="img/shape6.png" alt="img"></div>
+    <div class="shape8 rotateme" [ngClass]="{'d-none': router.url === '/index-2'}"><img src="img/shape8.svg" alt="shape"></div>
+</div>

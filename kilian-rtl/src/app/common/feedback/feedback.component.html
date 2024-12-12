@@ -1,0 +1,121 @@
+<!-- Default -->
+<div
+    class="feedback-area ptb-100 bg-gray"
+    [ngClass]="{'d-none': router.url === '/index-3' || router.url === '/index-4'}"
+>
+    <div class="container">
+        <div class="section-title">
+            <h2>Testimonials</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="feedback-slides">
+            <owl-carousel-o [options]="feedbackSlides">
+                <ng-template carouselSlide>
+                    <div class="single-feedback">
+                        <div class="client-info">
+                            <img src="img/client1.jpg" alt="client">
+                            <h3>Alit John</h3>
+                            <span>Web Developer</span>
+                        </div>
+                        <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project individual.</p>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-feedback">
+                        <div class="client-info">
+                            <img src="img/client2.jpg" alt="client">
+                            <h3>Alit John</h3>
+                            <span>SEO Expert</span>
+                        </div>
+                        <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project individual.</p>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-feedback">
+                        <div class="client-info">
+                            <img src="img/client3.jpg" alt="client">
+                            <h3>Steven John</h3>
+                            <span>Web Developer</span>
+                        </div>
+                        <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project individual.</p>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-feedback">
+                        <div class="client-info">
+                            <img src="img/client4.jpg" alt="client">
+                            <h3>David Warner</h3>
+                            <span>Web Developer</span>
+                        </div>
+                        <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project individual.</p>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+    <svg class="svg-feedback-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M0,70 C30,130 70,50 100,70 L100,100 0,100 Z" fill="#ffffff"/>
+    </svg>
+</div>
+
+<!-- Only for Digital Marketing & Product Landing Demo -->
+<div
+    class="feedback-area ptb-100 bg-gray"
+    *ngIf="router.url === '/index-3' || router.url === '/index-4'"
+>
+    <div class="container">
+        <div class="section-title">
+            <h2>Testimonials</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="feedback-slides">
+            <owl-carousel-o [options]="feedbackSlides">
+                <ng-template carouselSlide>
+                    <div class="single-feedback-box">
+                        <div class="client-info">
+                            <img src="img/client1.jpg" alt="client">
+                            <h3>Alit John</h3>
+                            <span>Web Developer</span>
+                        </div>
+                        <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project individual. Plan ahead by day, week, or month, and see project status at a glance.</p>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-feedback-box">
+                        <div class="client-info">
+                            <img src="img/client2.jpg" alt="client">
+                            <h3>Alit John</h3>
+                            <span>SEO Expert</span>
+                        </div>
+                        <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project individual. Plan ahead by day, week, or month, and see project status at a glance.</p>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-feedback-box">
+                        <div class="client-info">
+                            <img src="img/client3.jpg" alt="client">
+                            <h3>Steven John</h3>
+                            <span>Web Developer</span>
+                        </div>
+                        <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project individual. Plan ahead by day, week, or month, and see project status at a glance.</p>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-feedback-box">
+                        <div class="client-info">
+                            <img src="img/client4.jpg" alt="client">
+                            <h3>David Warner</h3>
+                            <span>Web Developer</span>
+                        </div>
+                        <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project individual. Plan ahead by day, week, or month, and see project status at a glance.</p>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+    <svg class="svg-feedback-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M0,70 C30,130 70,50 100,70 L100,100 0,100 Z" fill="#ffffff"/>
+    </svg>
+</div>

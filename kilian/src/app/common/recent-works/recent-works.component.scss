@@ -1,0 +1,158 @@
+.project-area {
+    position: relative;
+    z-index: 1;
+}
+.single-project {
+    text-align: center;
+    background: var(--whiteColor);
+    box-shadow: 0 10px 50px 0 rgba(46,65,90,.1);
+    margin-bottom: 30px;
+    border-radius: 5px;
+
+    .project-content {
+        text-align: start;
+        padding: 30px;
+
+        h3 {
+            margin: 0;
+            font: {
+                size: 23px;
+                weight: 700;
+            }
+        }
+        span {
+            display: block;
+            margin-bottom: 10px;
+            color: var(--secondaryColor);
+        }
+    }
+    .project-image {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--blackColor);
+            opacity: 0;
+            visibility: hidden;
+            border-radius: 5px;
+            transform: scale(.8);
+            transition: .4s;
+        }
+        a {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            right: 0;
+            margin: 0 auto;
+            font-size: 30px;
+            color: var(--whiteColor);
+            opacity: 0;
+            visibility: hidden;
+            margin-top: -20px;
+            transition: .4s;
+            transform: scale(0);
+
+            &:hover {
+                color: var(--primaryColor);
+            }
+        }
+        img {
+            transform-style: unset !important;
+            border-radius: 5px;
+        }
+    }
+    &:hover {
+        .project-image {
+            &::before {
+                visibility: visible;
+                opacity: .8;
+                transform: scale(1);
+            }
+            a {
+                visibility: visible;
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    }
+}
+::ng-deep {
+    .project-slides {
+        .owl-theme {
+            .owl-nav {
+                margin-top: 15px;
+                line-height: .01;
+                margin-bottom: -8px;
+    
+                [class*=owl-] {
+                    color: var(--secondaryColor);
+                    font-size: 30px;
+                    margin: 0 3px;
+                    padding: 0;
+                    background: transparent;
+                    display: inline-block;
+                    cursor: pointer;
+                    border-radius: 0;
+                    transition: .4s;
+    
+                    &:hover {
+                        color: var(--primaryColor);
+                    }
+                }
+            }
+            .owl-controls {
+                line-height: .1;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .single-project {
+        .project-content {
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+    ::ng-deep {
+        .project-slides {
+            .owl-theme {
+                .owl-nav {
+                    line-height: .01;
+                    margin: {
+                        top: 0;
+                        bottom: -8px;
+                    };
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .single-project {
+        .project-content {
+            h3 {
+                font-size: 21px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1350px) {}
+
+@media only screen and (min-width: 1910px) {}
+
+@media only screen and (max-width: 767px) {}

@@ -1,0 +1,236 @@
+.main-banner {
+    background: var(--primaryColor);
+    position: relative;
+    height: 840px;
+    z-index: 1;
+
+    .hero-content {
+        h1 {
+            margin: 0;
+            color: var(--whiteColor);
+            font: {
+                size: 60px;
+                weight: 700;
+            }
+        }
+        p {
+            color: #f2f2f2;
+            font-size: 18px;
+            margin: {
+                top: 30px;
+                bottom: 35px;
+            }
+        }
+        .btn {
+            &:hover {
+                &::after, &::before {
+                    background: var(--whiteColor);
+                }
+            }
+        }
+        .btn-primary {
+            &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+                color: var(--secondaryColor);
+                background: var(--whiteColor);
+            }
+            &:hover, &:focus {
+                background: var(--whiteColor);
+                color: var(--secondaryColor);
+            }
+        }
+        .video-btn {
+            margin-right: 15px;
+            color: var(--whiteColor);
+            text-transform: uppercase;
+            font: {
+                size: 15px;
+                weight: 700;
+            }
+            i {
+                font-size: 30px;
+                position: relative;
+                margin-right: 5px;
+                top: 4px;
+                transition: .4s;
+            }
+            &:hover {
+                i {
+                    color: var(--secondaryColor);
+                }
+            }
+        }
+    }
+    .signup-download {
+        background: var(--whiteColor);
+        padding: 30px 40px;
+        border-radius: 3px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            background: var(--whiteColor);
+            width: 96%;
+            opacity: .62;
+            height: 50%;
+            bottom: -6px;
+            right: 0;
+            left: 0;
+            margin: auto;
+            border-radius: 3px;
+            transition: .4s;
+        }
+        form {
+            .form-group {
+                margin-bottom: 20px;
+
+                label {
+                    display: block;
+                    margin-bottom: 8px;
+                    font: {
+                        weight: 700;
+                        size: 17px;
+                    }
+                }
+            }
+            .btn {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+    .bubble-animate {
+        .circle {
+            background: var(--whiteColor);
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .main-banner {
+        height: 100%;
+        overflow: hidden;
+        padding: {
+            top: 140px;
+            bottom: 90px;
+        };
+        .hero-content {
+            h1 {
+                font-size: 34px;
+            }
+            p {
+                font-size: 16px;
+                margin: {
+                    top: 20px;
+                    bottom: 25px;
+                }
+            }
+            .video-btn {
+                font-size: 14px;
+                margin-right: 8px;
+
+                i {
+                    font-size: 23px;
+                    margin-right: 3px;
+                }
+            }
+            form {
+                max-width: 100%;
+                position: relative;
+
+                .btn {
+                    position: relative;
+                    width: 100%;
+                    display: block;
+                    margin-top: 13px;
+                    padding: 16px 0;
+                }
+            }
+            &.pl-4 {
+                padding-right: 0 !important;
+            }
+        }
+        .signup-download {
+            padding: 20px;
+            margin: 35px 0 0 0 !important;
+        }
+        .shape4, .shape2, .shape1, .shape6 {
+            display: none;
+        }
+        .shape3 {
+            bottom: 10px;
+            left: 0;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .main-banner {
+        height: 100%;
+        padding: {
+            top: 170px;
+            bottom: 150px;
+        };
+        .hero-content {
+            margin-bottom: 45px;
+
+            h1 {
+                font-size: 50px;
+            }
+            &.pl-4 {
+                padding-right: 0 !important;
+            }
+        }
+        .signup-download {
+            margin: 0 !important;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .main-banner {
+        height: 100%;
+        padding: {
+            top: 195px;
+            bottom: 160px;
+        };
+        .hero-content {
+            &.pl-4 {
+                padding-right: 0 !important;
+            }
+            h1 {
+                font-size: 50px;
+            }
+        }
+        .shape4, .shape1 {
+            display: none;
+        }
+        .shape6 {
+            opacity: .3;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1350px) {}
+
+@media only screen and (min-width: 1910px) {
+
+    .main-banner {
+        height: 100vh;
+
+        .shape4 {
+            right: 20%;
+            top: 23%;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 767px) {}

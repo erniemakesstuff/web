@@ -1,0 +1,226 @@
+.app-download {
+    position: relative;
+    margin-top: 60px;
+    z-index: 1;
+    
+    .col-lg-6 {
+        position: relative;
+    }
+    .section-title {
+        text-align: start;
+        margin-bottom: 0;
+
+        .bar {
+            margin: {
+                right: 0;
+                left: 0;
+            };
+        }
+        p {
+            margin: {
+                right: 0;
+                left: 0;
+                bottom: 35px;
+            };
+        }
+        .download-btn {
+            a {
+                position: relative;
+                padding: 12px 65px 12px 35px;
+                background: var(--secondaryColor);
+                color: var(--whiteColor);
+                border-radius: 70px;
+                margin-left: 10px;
+                box-shadow: 0 13px 27px 0 rgba(163, 48, 53, 0.25);
+                font: {
+                    weight: 300;
+                    size: 15px;
+                };
+                i {
+                    position: absolute;
+                    right: 25px;
+                    top: 50%;
+                    font-size: 25px;
+                    margin-top: -12px;
+                }
+                span {
+                    display: block;
+                    font: {
+                        weight: 700;
+                        size: 16px;
+                    }
+                }
+                &:hover, &:focus {
+                    background: var(--primaryColor);
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+    .download-image {
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        bottom: 295px;
+        position: absolute;
+
+        img {
+            animation: movebounce 5s linear infinite;
+            position: absolute;
+            width: 445px;
+            right: -75px;
+            top: 0;
+
+            &:last-child {
+                right: 225px;
+                top: 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .app-download {
+        margin-top: 0;
+        
+        .download-image {
+            position: relative;
+            margin-top: 30px;
+            bottom: 0;
+            left: 0;
+
+            img {
+                position: relative;
+                width: auto;
+                right: 0;
+                top: 0;
+
+                &:last-child {
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    margin-top: 25px;
+                    position: relative;
+                }
+            }
+        }
+        .section-title {
+            .download-btn {
+                a {
+                    padding: 10px 45px 10px 20px;
+                    font-size: 12px;
+
+                    i {
+                        right: 15px;
+                        font-size: 20px;
+                        margin-top: -11px;
+                    }
+                    span {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .app-download {
+        margin-top: 0;
+        
+        .download-image {
+            left: 0;
+            bottom: 0;
+            margin-top: 45px;
+            position: relative;
+
+            img {
+                position: relative;
+                width: 410px;
+                right: 0;
+                top: 0;
+
+                &:last-child {
+                    top: 0;
+                    left: 0;
+                    right: auto;
+                    position: absolute;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .app-download {
+        margin-top: 0;
+
+        .download-image {
+            bottom: 200px;
+
+            img {
+                top: 0;
+                right: -10px;
+                width: 310px;
+
+                &:last-child {
+                    right: 170px;
+                    top: 20px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1350px) {
+
+    .app-download {
+        margin-top: 0;
+
+        .download-image {
+            bottom: 180px;
+
+            img {
+                top: 0;
+                right: 0;
+                width: 310px;
+
+                &:last-child {
+                    right: 200px;
+                    top: 0;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1910px) {
+
+    .app-download {
+        margin-top: 60px;
+
+        .download-image {
+            img {
+                top: 0;
+                right: -75px;
+                width: 485px;
+
+                &:last-child {
+                    right: 280px;
+                    top: 0;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 767px) {}
